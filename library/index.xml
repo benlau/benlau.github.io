@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Library on Unlimited Build Works</title>
+    <link>/library/</link>
+    <description>Recent content in Library on Unlimited Build Works</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Ben Lau ©</copyright>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/library/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Design of Design: Essays from a Computer Scientist</title>
+      <link>/library/the-design-of-design-essays-from-a-computer-scientist/</link>
+      <pubDate>Sun, 09 Oct 2022 05:35:53 +0000</pubDate>
+      
+      <guid>/library/the-design-of-design-essays-from-a-computer-scientist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>你的設計為什麼老是被打X: 深入23位設計界頂尖人士的思考世界</title>
+      <link>/library/critiqued-inside-the-minds-of-23-leaders-in-design/</link>
+      <pubDate>Sun, 24 Jul 2022 02:34:03 +0000</pubDate>
+      
+      <guid>/library/critiqued-inside-the-minds-of-23-leaders-in-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>盲目清零，徒勞無功</title>
+      <link>/library/%E7%9B%B2%E7%9B%AE%E6%B8%85%E9%9B%B6%E5%BE%92%E5%8B%9E%E7%84%A1%E5%8A%9F/</link>
+      <pubDate>Fri, 11 Feb 2022 13:59:44 +0000</pubDate>
+      
+      <guid>/library/%E7%9B%B2%E7%9B%AE%E6%B8%85%E9%9B%B6%E5%BE%92%E5%8B%9E%E7%84%A1%E5%8A%9F/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    
+    
+    
+    <title>Unlimited Build Works | Logitech MX Master 3 Mouse</title>
+    <meta name="description" content="">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            
+            <b style="font-weight: 800;">Unlimited Build Works</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/garden/"> Digital Garden</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/projects/"> Projects</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/library/"> Library</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> About</a>
+                </li>
+             
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">Logitech MX Master 3 Mouse</h1>
+        </div>
+        
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created Oct 6, 2022 - 
+                
+                Last updated: Oct 7, 2022
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <p><strong>結論：千萬不要買</strong></p>
+<ul>
+<li>擁有這隻滑鼠的朋友意外地多，許多朋友表示Bluetooth連接不穩定</li>
+<li>我個人是用於KVM連接一台Mac及一台Linux，不受這個問題影響</li>
+<li>但連結Mac時，垂直捲軸的移動速度快得豈有此理，完全不受控制</li>
+<li>必須安裝Logi Options+才可以解決問題</li>
+<li>在KVM切換時，這問題必定會出現，要等幾秒才會回復正常，大概是Logi Options+處理慢了</li>
+<li>橫軸的手感沒垂直的好</li>
+<li>Gesture按鈕超難按</li>
+</ul>
+<p>在沒裝Logi Options+的情況下使用</p>
+<ol>
+<li>Linux正常，滑鼠速度有點慢，但可以通過設定解決</li>
+<li>Mac滑鼠速度慢，但可以通過設定解決</li>
+<li>但中軸的scrolling speed太快，在Mac的system perference中無法設定，橫軸則沒有問題</li>
+</ol>
+<p>User Guide: <a href="https://www.logitech.com/en-hk/promo/mxsetup.html">https://www.logitech.com/en-hk/promo/mxsetup.html</a>
+<a href="https://www.youtube.com/watch?v=RJQxJbD_Zf0"> Fast Scrolling Fix for Logitech MX Master 3  - YouTube</a></p>
+<h1 id="technical">Technical</h1>
+<pre tabindex="0"><code>$ xinput list
+⎡ Virtual core pointer                    	id=2	[master pointer  (3)]
+⎜   ↳ Virtual core XTEST pointer              	id=4	[slave  pointer  (2)]
+⎜   ↳ Logitech MX Master 3                    	id=11	[slave  pointer  (2)]
+⎣ Virtual core keyboard                   	id=3	[master keyboard (2)]
+    ↳ Virtual core XTEST keyboard             	id=5	[slave  keyboard (3)]
+    ↳ Power Button                            	id=6	[slave  keyboard (3)]
+    ↳ Video Bus                               	id=7	[slave  keyboard (3)]
+    ↳ Power Button                            	id=8	[slave  keyboard (3)]
+    ↳ Sleep Button                            	id=9	[slave  keyboard (3)]
+    ↳ USB Keyboard                            	id=10	[slave  keyboard (3)]
+    ↳ Logitech MX Master 3                    	id=12	[slave  keyboard (3)]
+</code></pre><pre tabindex="0"><code>$ xinput test 11
+button press   9 
+button release 9 
+button press   8 
+button release 8 
+</code></pre><hr>
+<p><a href=":/63e360aeb99440de8848cfac11b261fd">Click and Touch 2</a></p>
+
+        </div>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Ben Lau © 2022 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2" href="https://www.twitter.com/benlaud" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2" href="https://github.com/benlau" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <a class="footer-social px-2" href="https://medium.com/unlimited-build-works" target="_blank"><i class="fab fa-medium-m"></i></a>
+            
+            <a class="footer-social px-2" href="https://medium.com/@benlaud" target="_blank"><i class="fab fa-medium-m"></i></a>
+            
+        </div>
+    </div>
+</div><script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script></body>
+</html>
