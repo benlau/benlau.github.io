@@ -68,7 +68,7 @@
                 
                     Created Oct 8, 2022 - 
                 
-                Last updated: Oct 9, 2022
+                Last updated: Oct 10, 2022
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -87,13 +87,16 @@
     <div class="container-fluid py-2">
         <div class="serif main-content">
             <h1 id="markdown">Markdown</h1>
-<p>4 Days Planner (Markdown) Generater</p>
+<p>4 Days Planner (Markdown) Generator
+Copy and paste the code below to your Joplin Markdown Editor</p>
 
 
   <script type="text/javascript">
     function writeDate(date) {
-        const [month, day, year] = [date.getMonth()+1, date.getDate(), date.getFullYear()];
-        document.write(`<b><p># ${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}</p></b>`)
+        const weekday = ["Mon", "Tue", "Wed", "Thu", "Fri" , "Sat" , "Sun"]
+
+        const [month, day, year, dayOfWeek] = [date.getMonth()+1, date.getDate(), date.getFullYear(), date.getDay()];
+        document.write(`<b><p># ${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')} ${weekday[dayOfWeek]}</p></b>`)
         document.write("<p></p>")
     }
     for (var i in Array.from(Array(4).keys())) {
@@ -104,12 +107,6 @@
   </script>
 
 
-
-<hr>
-<h1 id="todo">TODO</h1>
-<ul>
-<li><input disabled="" type="checkbox"> Add Sun, Mon, &hellip; Sat</li>
-</ul>
 
         </div>
     </div>
