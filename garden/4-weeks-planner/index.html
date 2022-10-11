@@ -25,7 +25,7 @@
     
     
     
-    <title>Unlimited Build Works | 4 Days Planner</title>
+    <title>Unlimited Build Works | 4 Weeks Planner</title>
     <meta name="description" content="">
 </head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
@@ -62,7 +62,7 @@
 <div class="container" style="max-width: 800px;">
     <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4 text-center">4 Days Planner</h1>
+            <h1 class="display-2 mb-4 text-center">4 Weeks Planner</h1>
         </div>
         
         <div class="text-center pt-4">
@@ -74,9 +74,9 @@
             <p class="card-date m-0">
                 
                 
-                    Created Oct 8, 2022 - 
+                    Created Oct 10, 2022 - 
                 
-                Last updated: Oct 10, 2022
+                Last updated: Oct 11, 2022
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -95,32 +95,49 @@
     <div class="container-fluid py-2">
         <div class="serif main-content">
             <h1 id="markdown-generation">Markdown Generation</h1>
-<p>Copy and paste the code below to your Joplin Markdown Editor</p>
 <hr>
 
 
   <script type="text/javascript">
-    function writeDate(date) {
-        const weekday = ["Mon", "Tue", "Wed", "Thu", "Fri" , "Sat" , "Sun"]
+Date.prototype.getWeek = function() {
+    var date = new Date(this.getTime());
+    date.setHours(0, 0, 0, 0);
+    // Thursday in current week decides the year.
+    date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
+    // January 4 is always in week 1.
+    var week1 = new Date(date.getFullYear(), 0, 4);
+    // Adjust to Thursday in week 1 and count number of weeks from date to week1.
+    return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000
+                          - 3 + (week1.getDay() + 6) % 7) / 7);
+}
 
-        const [month, day, year, dayOfWeek] = [date.getMonth()+1, date.getDate(), date.getFullYear(), date.getDay()];
-        document.write(`<b><p># ${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')} ${weekday[dayOfWeek]}</p></b>`)
-        document.write("<p></p>")
-    }
-    for (var i in Array.from(Array(4).keys())) {
-        const date = new Date()
-        date.setDate(date.getDate() + parseInt(i))
-        writeDate(date);
-    }
-  </script>
+Date.prototype.format = function() {
+    const [month, day, year, dayOfWeek] = [this.getMonth()+1, this.getDate(), this.getFullYear(), this.getDay()];
+    return `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`
+}
+
+const today = new Date();
+today.setHours(0,0,0,0);
+const begin = new Date(today.getTime())
+begin.setDate(begin.getDate() - begin.getDay());
+
+for (let i in Array.from(Array(4).keys())) {
+    const start = new Date(begin.getTime())
+    start.setDate(start.getDate() + i * 7);
+    const end = new Date(start.getTime())
+    end.setDate(end.getDate() + 6);
+    document.write(`# ${start.format()} ~ ${end.format()} Week: ${start.getWeek()}<p></p><p></p>`);
+}
+</script>
   
   
 
 
 <hr>
-<h1 id="why">Why?</h1>
-<p>我不喜歡用待辦事項軟件來管理日程計劃，因為界面的設計是為清零而做的，不讓你遺忘任何工作，這是它的本質，但我<a href="/library/%E7%9B%B2%E7%9B%AE%E6%B8%85%E9%9B%B6%E5%BE%92%E5%8B%9E%E7%84%A1%E5%8A%9F/">受夠了</a>這種做法。</p>
-<p>現在都是用Joplin來做GTD式的工作管理，長遠的日程規劃則使用Trello及Google Calander，但四日內的計劃還是留在Joplin內，上面的Script會自動生成四日的Markdown代碼，不用自己做打。</p>
+<h3 id="todo">TODO</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Embed a small calendar</li>
+</ul>
 
         </div>
     </div>
