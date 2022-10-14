@@ -9,6 +9,15 @@
     <copyright>Ben Lau ©</copyright>
     <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>MemoInjo</title>
+      <link>/projects/memoinjo/</link>
+      <pubDate>Thu, 13 Oct 2022 04:14:04 +0000</pubDate>
+      
+      <guid>/projects/memoinjo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Dualless</title>
       <link>/projects/dualless/</link>
       <pubDate>Thu, 13 Oct 2022 02:20:06 +0000</pubDate>
@@ -27,7 +36,7 @@
     </item>
     
     <item>
-      <title>Joplin Web Export Tool</title>
+      <title>Joplin Website Export Tool</title>
       <link>/projects/joplin-export-tool/</link>
       <pubDate>Thu, 06 Oct 2022 19:11:39 +0000</pubDate>
       

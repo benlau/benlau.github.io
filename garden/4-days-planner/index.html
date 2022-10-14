@@ -100,7 +100,7 @@
 
   <script type="text/javascript">
     function writeDate(date) {
-        const weekday = ["Mon", "Tue", "Wed", "Thu", "Fri" , "Sat" , "Sun"]
+        const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri" , "Sat" ]
 
         const [month, day, year, dayOfWeek] = [date.getMonth()+1, date.getDate(), date.getFullYear(), date.getDay()];
         document.write(`<b><p># ${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')} ${weekday[dayOfWeek]}</p></b>`)
