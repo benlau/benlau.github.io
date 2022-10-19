@@ -76,7 +76,7 @@
                 
                     Created Oct 15, 2022 - 
                 
-                Last updated: Oct 16, 2022
+                Last updated: Oct 18, 2022
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -94,7 +94,48 @@
 
     <div class="container-fluid py-2">
         <div class="serif main-content">
-            <h1 id="random-id-generation">Random ID Generation</h1>
+            <h1 id="next-id">Next ID</h1>
+<hr>
+
+
+<script type="text/javascript">
+
+(function() {
+    const initId = "abs";
+    const initDate = Date.parse("2022-10-18");
+    const alphabet = "abcdefghijklmnopqrstuvwxyz";
+    const num = "0123456789";
+    const alphaNum = alphabet + num;
+
+    // console.log({initDate});
+    function toNum(id) {
+        let num = 0;
+        for (let i = 0; i < id.length; i++) {
+            num = num * alphaNum.length + alphaNum.indexOf(id[i]);
+        }
+        return num;
+    }
+
+    function fromNum(num) {
+        let id = "";
+        while (num > 0) {
+            id = alphaNum[num % alphaNum.length] + id;
+            num = Math.floor(num / alphaNum.length);
+        }
+        return id.padStart(initId.length, "a");
+    }
+
+    const today = new Date();
+    const diff = Math.ceil((today.getTime() - initDate) / 1000 / 3600 / 24);
+    const id = fromNum(toNum(initId) + diff);
+    document.write(`${id}1a<p></p>`);
+})();	
+</script>
+
+
+
+<hr>
+<h1 id="random-id-generation">Random ID Generation</h1>
 <hr>
 
 
@@ -121,7 +162,7 @@ function genCardID() {
 }
 	
 for (let i in Array.from(Array(4).keys())) {
-	    document.write(`${genCardID()}<p></p><p></p>`);
+	    document.write(`${genCardID()}<p></p>`);
 }
 	
 </script>
