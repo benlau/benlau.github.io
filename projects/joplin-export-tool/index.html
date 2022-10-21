@@ -76,7 +76,7 @@
                 
                     Created Oct 6, 2022 - 
                 
-                Last updated: Oct 17, 2022
+                Last updated: Oct 21, 2022
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -117,7 +117,21 @@
 </ul>
 <h1 id="installation">Installation</h1>
 <pre tabindex="0"><code>npm install -g XXX
-</code></pre><h1 id="todo">Todo</h1>
+</code></pre><h1 id="usage">Usage</h1>
+<p>Create a project</p>
+<pre tabindex="0"><code>xxxx init
+</code></pre><p>This command creates 3 files</p>
+<p><strong>config.yaml</strong>: The configuration of the digital garden site. It tells XXX what kind of site engine to use and its parameters.</p>
+<p>![Content of config.yaml]</p>
+<p><strong>garden.yaml</strong>: This file contains the exported notes parameter. For example, xxx generate the URL of an exported note according to the title. To perverse the URL to be changed by the title modification, xxx stores the URL into this file.</p>
+<p><strong>hooks.js</strong>: You may customize the generation process by writing your own script inside hooks.js</p>
+<p>Example Usage:</p>
+<ul>
+<li>Set tags of the exported note</li>
+<li>Re-render the content (e.g remove private note)</li>
+<li>Append a footer to a specific note with a specific tag</li>
+</ul>
+<h1 id="todo">Todo</h1>
 <ul>
 <li><input disabled="" type="checkbox"> User Guide</li>
 <li><input disabled="" type="checkbox"> Support to export and download non-image files</li>
