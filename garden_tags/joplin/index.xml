@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>joplin on Unlimited Build Works</title>
-    <link>/garden_tags/joplin/</link>
+    <link>https://benlau.github.io/garden_tags/joplin/</link>
     <description>Recent content in joplin on Unlimited Build Works</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Ben Lau ©</copyright>
-    <lastBuildDate>Mon, 10 Oct 2022 23:50:03 +0000</lastBuildDate><atom:link href="/garden_tags/joplin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Oct 2022 23:50:03 +0000</lastBuildDate><atom:link href="https://benlau.github.io/garden_tags/joplin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>4 Weeks Planner</title>
-      <link>/garden/4-weeks-planner/</link>
+      <link>https://benlau.github.io/garden/4-weeks-planner/</link>
       <pubDate>Mon, 10 Oct 2022 23:50:03 +0000</pubDate>
       
-      <guid>/garden/4-weeks-planner/</guid>
+      <guid>https://benlau.github.io/garden/4-weeks-planner/</guid>
       <description></description>
     </item>
     
     <item>
       <title>4 Days Planner</title>
-      <link>/garden/4-days-planner/</link>
+      <link>https://benlau.github.io/garden/4-days-planner/</link>
       <pubDate>Sat, 08 Oct 2022 12:03:13 +0000</pubDate>
       
-      <guid>/garden/4-days-planner/</guid>
+      <guid>https://benlau.github.io/garden/4-days-planner/</guid>
       <description>Markdown Template</description>
     </item>
     

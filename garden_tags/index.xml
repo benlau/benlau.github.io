@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Garden_tags on Unlimited Build Works</title>
-    <link>/garden_tags/</link>
+    <link>https://benlau.github.io/garden_tags/</link>
     <description>Recent content in Garden_tags on Unlimited Build Works</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Ben Lau ©</copyright>
-    <lastBuildDate>Mon, 10 Oct 2022 23:50:03 +0000</lastBuildDate><atom:link href="/garden_tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Oct 2022 23:50:03 +0000</lastBuildDate><atom:link href="https://benlau.github.io/garden_tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>joplin</title>
-      <link>/garden_tags/joplin/</link>
+      <link>https://benlau.github.io/garden_tags/joplin/</link>
       <pubDate>Mon, 10 Oct 2022 23:50:03 +0000</pubDate>
       
-      <guid>/garden_tags/joplin/</guid>
+      <guid>https://benlau.github.io/garden_tags/joplin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gadget</title>
-      <link>/garden_tags/gadget/</link>
+      <link>https://benlau.github.io/garden_tags/gadget/</link>
       <pubDate>Thu, 06 Oct 2022 19:11:39 +0000</pubDate>
       
-      <guid>/garden_tags/gadget/</guid>
+      <guid>https://benlau.github.io/garden_tags/gadget/</guid>
       <description></description>
     </item>
     

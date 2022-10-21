@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project_tags on Unlimited Build Works</title>
-    <link>/project_tags/</link>
+    <link>https://benlau.github.io/project_tags/</link>
     <description>Recent content in Project_tags on Unlimited Build Works</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Ben Lau ©</copyright>
-    <lastBuildDate>Thu, 13 Oct 2022 04:14:04 +0000</lastBuildDate><atom:link href="/project_tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Oct 2022 04:14:04 +0000</lastBuildDate><atom:link href="https://benlau.github.io/project_tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>chrome</title>
-      <link>/project_tags/chrome/</link>
+      <link>https://benlau.github.io/project_tags/chrome/</link>
       <pubDate>Thu, 13 Oct 2022 04:14:04 +0000</pubDate>
       
-      <guid>/project_tags/chrome/</guid>
+      <guid>https://benlau.github.io/project_tags/chrome/</guid>
       <description></description>
     </item>
     
     <item>
       <title>joplin</title>
-      <link>/project_tags/joplin/</link>
+      <link>https://benlau.github.io/project_tags/joplin/</link>
       <pubDate>Thu, 13 Oct 2022 04:14:04 +0000</pubDate>
       
-      <guid>/project_tags/joplin/</guid>
+      <guid>https://benlau.github.io/project_tags/joplin/</guid>
       <description></description>
     </item>
     
