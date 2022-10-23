@@ -72,12 +72,12 @@
     </item>
     
     <item>
-      <title>Joplin DDDot Project</title>
+      <title>Joplin DDDot Plugin Project</title>
       <link>https://benlau.github.io/projects/joplin-dddot/</link>
       <pubDate>Sun, 09 Oct 2022 01:03:59 +0000</pubDate>
       
       <guid>https://benlau.github.io/projects/joplin-dddot/</guid>
-      <description></description>
+      <description>DDDot is a Joplin plugin to provide a set of tools like recent notes, shortcuts, scratchpad, daily note, random note, and …. in a single sidebar.</description>
     </item>
     
     <item>
