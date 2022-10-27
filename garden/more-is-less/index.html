@@ -25,13 +25,13 @@
     
     
     
-    <title>自幹一套卡片盒筆記法系統  | Unlimited Build Works</title>
-    <meta name="description" content="">
+    <title>More is less | Unlimited Build Works</title>
+    <meta name="description" content="More is less - 拿Evernote做例子">
     <link rel="icon" href="https://benlau.github.io/img/favicon.ico" />
-    <meta property="og:title" content="自幹一套卡片盒筆記法系統 "/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="More is less"/>
+    <meta property="og:description" content="More is less - 拿Evernote做例子"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://benlau.github.io/garden/zettelkasten-software-diy/"/>
+    <meta property="og:url" content="https://benlau.github.io/garden/more-is-less/"/>
     
     <meta property="og:image" content="https://benlau.github.io/img/ogimage.png"/>
     <meta property="og:image:url" content="https://benlau.github.io/img/ogimage.png"/>
@@ -74,8 +74,10 @@
 <div class="container" style="max-width: 800px;">
     <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4 text-center">自幹一套卡片盒筆記法系統 </h1>
+            <h1 class="display-2 mb-4 text-center">More is less</h1>
         </div>
+        
+        <p class="text-center fs-4 fst-italic serif">More is less - 拿Evernote做例子</p>
         
         <div class="text-center pt-4">
             
@@ -86,18 +88,14 @@
             <p class="card-date m-0">
                 
                 
-                    Created Oct 21, 2022 - 
+                    Created Jun 22, 2022 - 
                 
-                Last updated: Oct 26, 2022
+                Last updated: Oct 27, 2022
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
                 <div class="col-sm-4">
                     
-    
-    <span class="status">Seeding 🌱</span>
-    
-
                 </div>
                 <div class="col-sm-8" style="text-align: right;">
                     
@@ -110,25 +108,23 @@
 
     <div class="container-fluid py-2">
         <div class="serif main-content">
-            <p>卡片盒筆記法是一個熱門的題目，原版是一套實體筆記的系統，在數碼工具普及的這天，未必有人會想在家放一個大大的木櫃來存放文件記錄，而會採用電腦、手機等工具。</p>
-<p>但在軟件中又如何應用這套系統呢？並沒有一個絕對的答案。</p>
-<p>跟你選擇的筆記軟體有關，說起筆記軟件及卡片盒筆記法，通常第一個想起的應該是Obsidian，Link Graph功能所提供的關聯圖，看起來就很炫很酷；然後是Notion這個全能型超強大的系統；作為老牌子，不知為何原地打轉，花了好多年都沒法把讓新版超越舊版的Evernote也會有人想起 &mdash; 會問行不行吧？</p>
-<p>雖然各軟件所支援的功能都不盡同，但有一點是共通的，你能用一個大木櫃做出的系統，沒道理會有軟件無法複制，差別只在於有多方便。</p>
-<p>不一定要為了使用卡片盒筆記法而轉系統。</p>
-<p>所以我也打算繼續用Joplin XD</p>
-<p>相比之下，Joplin本身對卡片盒筆記法的支援較少，但不足的功能，自己做出來不就好了嗎？</p>
-<p>所以我決定以Joplin為骨幹，自幹一些軟件協助執行卡片盒筆記法，不單有Joplin的插件，還有瀏覽器插件，指令工具等等。</p>
-<p>在這裏會分享當中的開發及思路歷程，不過我並非單純為卡片盒筆記法做設計，平常我也有應用GTD、PARA、子彈筆記術等方法論，故此會把所有東西混在一起考慮。</p>
-<p>但其實在最初的時候，我僅僅只是想在Joplin弄出一個草稿區而已，不知不覺間就越做越多⋯⋯</p>
-<p>待續</p>
-<ul>
-<li>[[本想做一個小功能，卻變成了攞你命3千(未完成）]]</li>
-<li>[[被客戶轟炸後誕生的MemoInjo(未完成）]]</li>
-<li>[[筆記太多了，就做工具匯出到數位花園(未寫)]]</li>
-<li>[[無止盡的文獻參考工作 (工具都未寫出來)]]</li>
-<li>[[我的戰鬥才剛剛開始，陸續有來(未寫)]]</li>
-<li>[[索引編號有用嗎？]]</li>
-</ul>
+            <p>人們常說Less is more，那麼相反地More is less 的情況也會發生，就拿產品開發向方莫名其妙的Evernote為例。</p>
+<p>在Evernote Android版中，預設會加入一個叫做Scratch pad的輸入框，開啟程式後立即便能寫東西，在完成按一就會建立新筆記，讓用戶方便地寫草稿。</p>
+<p><img src="/res/bfab1aebba9744aba05b82c9ed0e274e/6705cb51f8c62169f293224238098c48.png" alt="6705cb51f8c62169f293224238098c48.png"></p>
+<p>最初&quot;發現&quot;（後面補充）這功能時覺得很棒，因為一打開程式就能寫，連按New Note按鈕都可以省回。</p>
+<p>但原來這是一廂情願的幻想，很快就被Evernote狠狠地打臉，之後就沒有再用過這功能。</p>
+<p>原因在於這功能支援同步。</p>
+<p>同步有什麼不好？</p>
+<p>非常的不好。</p>
+<p>每次想到有東西想記錄時，很大機會跑出一個Synchronizing Scratch pad的狀態欄擋著不讓輸入，要等數秒甚至十秒，等同於閹割了隨時輸入的功能，還不如直接按New Note按鈕來建立新筆記還比較快。</p>
+<p><strong>這功能是預設打開的</strong>，在新版本推出時便應立即會知道，前面之所以說&quot;發現&quot;這功能，是因為我有一段很長的時間沒有打開Mobile版。</p>
+<p>這跟Evernote另一個功能有關，就是關閉「螢幕自動鎖定」，對於影像、閱讀器這類程式都有提供這個功能，避免看影片時突然關閉螢幕，本來筆記類軟件支援也不是奇事，問題是⋯⋯</p>
+<p>它不能關</p>
+<p>它不能關</p>
+<p>當時我用的手機電量吃緊，有好幾次打開了Evernote後忘了關，電量就從此急降，因此令我戒掉了閒著沒事就打開Evernote看筆記的習慣，令我減少使用。</p>
+<p>（但我當初變成付費用戶就是為了用Evernote手機版的離線閱讀功能）</p>
+<p>現在的Evernote總是弄出不討用戶歡心的功能，越是多的功能，就越是會把舊用戶嚇走，Evernote可說是最會搞出More is less例子的公司了，雖然有點遲，我也決定了放棄續訂付費訂閱服務。 - 2022-10-23</p>
+<p>有時候我們要明白，做得多，未必一定好。</p>
 
         </div>
         <div class="text-center pt-4">
