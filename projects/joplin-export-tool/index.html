@@ -88,7 +88,7 @@
                 
                     Created Oct 6, 2022 - 
                 
-                Last updated: Oct 21, 2022
+                Last updated: Oct 30, 2022
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -116,9 +116,9 @@
         <div class="serif main-content">
             <p>It is a tool to export notes from Joplin to build a digital garden website. Unlike the traditional personal blog that publishes a set of articles in a reversed chronological order, the digital garden is a lot like a wiki with evolving ideas connected by links.</p>
 <p>This tool support exporting to a Github Wiki or Hugo Static Site Generator.</p>
-<h1 id="features">Features</h1>
+<h2 id="features">Features</h2>
 <ul>
-<li>Export notes from Joplin by tags</li>
+<li>Exported tag filtered notes from Joplin by tags</li>
 <li>Export to Github Wiki / Hugo</li>
 <li>Support link transclusion</li>
 <li>Support running custom script
@@ -127,15 +127,24 @@
 </ul>
 </li>
 </ul>
+<h2 id="use-cases">Use-cases</h2>
+<ul>
+<li>Build digital garden</li>
+<li>Build a website of books</li>
+<li>Update the markdown document inside a software project</li>
+</ul>
 <h1 id="installation">Installation</h1>
-<pre tabindex="0"><code>npm install -g XXX
-</code></pre><h1 id="usage">Usage</h1>
-<p>Create a project</p>
+<pre tabindex="0"><code>git clone xxxx
+cd xxxx
+npm install -g
+</code></pre><p>That will install jgw command line program on your machine.</p>
+<h1 id="usage">Usage</h1>
+<h2 id="create-a-project">Create a project</h2>
 <pre tabindex="0"><code>xxxx init
 </code></pre><p>This command creates 3 files</p>
 <p><strong>config.yaml</strong>: The configuration of the digital garden site. It tells XXX what kind of site engine to use and its parameters.</p>
 <p>![Content of config.yaml]</p>
-<p><strong>garden.yaml</strong>: This file contains the exported notes parameter. For example, xxx generate the URL of an exported note according to the title. To perverse the URL to be changed by the title modification, xxx stores the URL into this file.</p>
+<p><strong>garden.yaml</strong>: This file contains the exported notes metadata. For example, xxx generate the URL of an exported note according to the title. To perverse the URL to be changed by the title modification, xxx stores the URL into this file.</p>
 <p><strong>hooks.js</strong>: You may customize the generation process by writing your own script inside hooks.js</p>
 <p>Example Usage:</p>
 <ul>
@@ -143,15 +152,14 @@
 <li>Re-render the content (e.g remove private note)</li>
 <li>Append a footer to a specific note with a specific tag</li>
 </ul>
+<p>[[ Link to Example]]</p>
+<h2 id="obtain-the-joplin-api-key">Obtain the Joplin API Key</h2>
+<p>Writing</p>
 <h1 id="todo">Todo</h1>
 <ul>
 <li><input disabled="" type="checkbox"> User Guide</li>
-<li><input disabled="" type="checkbox"> Support to export and download non-image files</li>
-<li><input disabled="" type="checkbox"> <code>init</code> commmand</li>
 <li><input disabled="" type="checkbox"> Sample projects</li>
-<li><input disabled="" type="checkbox"> What is the name?</li>
 <li><input disabled="" type="checkbox"> Code clean</li>
-<li><input disabled="" type="checkbox"> Example theme</li>
 <li><input disabled="" type="checkbox"> Release</li>
 <li><input checked="" disabled="" type="checkbox"> Backlinks</li>
 <li><input checked="" disabled="" type="checkbox"> Support mermaid</li>
@@ -160,11 +168,12 @@
 <li><input checked="" disabled="" type="checkbox"> Export to Github Wiki</li>
 <li><input checked="" disabled="" type="checkbox"> Export to Static Site Generator</li>
 <li><input checked="" disabled="" type="checkbox"> Test Chinese Title</li>
+<li><input checked="" disabled="" type="checkbox"> Open Graph Support</li>
 </ul>
-<h1 id="future">Future</h1>
+<h2 id="future">Future</h2>
 <ul>
+<li><input disabled="" type="checkbox"> Support to export and download non-image files</li>
 <li><input disabled="" type="checkbox"> Link Graph Generation</li>
-<li><input disabled="" type="checkbox"> Open Graph Support</li>
 </ul>
 <h1 id="resources">Resources</h1>
 <ul>
