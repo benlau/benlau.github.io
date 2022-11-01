@@ -88,7 +88,7 @@
                 
                     Created Oct 6, 2022 - 
                 
-                Last updated: Oct 30, 2022
+                Last updated: Oct 31, 2022
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -116,6 +116,7 @@
         <div class="serif main-content">
             <p>It is a tool to export notes from Joplin to build a digital garden website. Unlike the traditional personal blog that publishes a set of articles in a reversed chronological order, the digital garden is a lot like a wiki with evolving ideas connected by links.</p>
 <p>This tool support exporting to a Github Wiki or Hugo Static Site Generator.</p>
+<p>Demo site: <a href="https://benlau.github.io/">Unlimited Build Works</a></p>
 <h2 id="features">Features</h2>
 <ul>
 <li>Exported tag filtered notes from Joplin by tags</li>
@@ -138,14 +139,67 @@
 cd xxxx
 npm install -g
 </code></pre><p>That will install jgw command line program on your machine.</p>
-<h1 id="usage">Usage</h1>
-<h2 id="create-a-project">Create a project</h2>
-<pre tabindex="0"><code>xxxx init
-</code></pre><p>This command creates 3 files</p>
-<p><strong>config.yaml</strong>: The configuration of the digital garden site. It tells XXX what kind of site engine to use and its parameters.</p>
-<p>![Content of config.yaml]</p>
-<p><strong>garden.yaml</strong>: This file contains the exported notes metadata. For example, xxx generate the URL of an exported note according to the title. To perverse the URL to be changed by the title modification, xxx stores the URL into this file.</p>
-<p><strong>hooks.js</strong>: You may customize the generation process by writing your own script inside hooks.js</p>
+<h1 id="getting-started-by-a-sample-project">Getting Started By a Sample Project</h1>
+<p>To create your digital garden, you need to choose the engine used. Currently, two kinds of engines are supported: GitHub Wiki / Hugo.</p>
+<p>And then create a <code>config.yaml</code> to store your perferences. You may provides a <code>hooks.js</code> to run script during the generation process to customize the behaviour.</p>
+<p>A sample config for building a Hugo website is available at <code>samples/hugo</code>. You need to install the hugo command line tool first. (The instruction)</p>
+<p>Preparation:</p>
+<pre tabindex="0"><code>cd samples/hugo/example-site
+git clone xxxxxx
+</code></pre><p>The Usage:</p>
+<h2 id="obtain-the-api-key">Obtain the API key</h2>
+<p>To access your Data in Joplin, you need to get the API KEY. You may run the following commands:</p>
+<pre tabindex="0"><code>$ cd samples/hugo
+$ jgw auth 
+</code></pre><ul>
+<li><input disabled="" type="checkbox"> Example output</li>
+</ul>
+<p>And then you could launch Joplin and it should show a dialog to ask to grant permission for the request if you have web clipper enabled. ([The instruction]). Accept the request then it will write a <code>.auth</code> file to store the API . If you holding the project inside a version control system like git. Please don&rsquo;t commit this file.</p>
+<h2 id="export-the-site">Export the site</h2>
+<pre tabindex="0"><code>$ jgw export example-site
+xxx
+</code></pre><ul>
+<li><input disabled="" type="checkbox"> Example Output</li>
+</ul>
+<p>Run the above command to export the site to hugo. If it is showing that <code>0 notes exported</code>. It isalright because you may not have any notes with the tag &ldquo;jgw-demo&rdquo;. Open the Joplin , and random tag a note you would like to export. Then rerun the above command.</p>
+<pre tabindex="0"><code>cd samples/hugo/example-site
+hugo server -D
+</code></pre><p>Open the http://localhost:1313 in your browser. It should show a digital garden with notes exported from your Joplin.</p>
+<h1 id="configuration">Configuration</h1>
+<p>The Joplin Garden Worker supports exporting a site and customizing the generation process. It needs to hold the configuration and script inside a project folder.</p>
+<p>The flow:</p>
+
+<div class="mermaid" align="center">
+graph LR
+Joplin --> Project
+Project --> Site 
+</div>
+
+<p>Each project should contain at least 3 files:</p>
+<h2 id="configyaml">config.yaml</h2>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">engine</span><span style="color:#111">:</span> <span style="color:#ae81ff">hugo</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">hugoOptions</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">outputAsFolder</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">defaultFolder</span><span style="color:#111">:</span> <span style="color:#ae81ff">garden</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">stripHtmlComments</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">includeTags</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span> - <span style="color:#ae81ff">jgw</span>
+</span></span></code></pre></div><ul>
+<li>engine: The type of engine used. Available choices: githubwiki/hugo</li>
+<li>inclucedTags: It is an array of tags. Only the note with the tags will be exported.</li>
+<li>hugoOptions: Hugo specific options.
+<ul>
+<li>outputAsFolder: A option for Hugo only. By default, the XX generates a note in the format of <code>${folder}/${note-title}.md</code>. If outputAsFolder was set, it will become <code>${folder}/${note-title}/index.md</code>. It is designed to support Hugo theme that will show the featured image. The default value is true.</li>
+</ul>
+</li>
+<li>defaultFolder: The default output folder of a note.</li>
+<li>stripHtmlComments: If it is true , HTML comment blocks are removed from the exported note.</li>
+</ul>
+<h2 id="gardenyaml">garden.yaml</h2>
+<p>This file contains the exported notes metadata. For example, xxx generate the URL of an exported note according to the title. To perverse the URL to be changed by the title modification, xxx stores the URL into this file.</p>
+<h2 id="hooksjs">hooks.js</h2>
+<p>You may customize the generation process by writing your own script inside hooks.js</p>
 <p>Example Usage:</p>
 <ul>
 <li>Set tags of the exported note</li>
@@ -153,9 +207,16 @@ npm install -g
 <li>Append a footer to a specific note with a specific tag</li>
 </ul>
 <p>[[ Link to Example]]</p>
+<h1 id="commands">Commands</h1>
 <h2 id="obtain-the-joplin-api-key">Obtain the Joplin API Key</h2>
-<p>Writing</p>
-<h1 id="todo">Todo</h1>
+<pre tabindex="0"><code>jgw auth
+</code></pre><h2 id="update-the-gardenyaml">Update the garden.yaml</h2>
+<p>The <code>garden.yaml</code> stores the metadata of the exported notes. Sometimes you may not want to export the notes directly and only updates the garden.yaml to have a preview of changes. You may run this command:</p>
+<pre tabindex="0"><code>joplin-gardener update
+</code></pre><h2 id="exporting-the-site">Exporting the site</h2>
+<p>This command exports the notes to the target folder and it will also update the garden.yaml</p>
+<pre tabindex="0"><code>jgw export OUTPUT_FOLDER
+</code></pre><h1 id="todo">Todo</h1>
 <ul>
 <li><input disabled="" type="checkbox"> User Guide</li>
 <li><input disabled="" type="checkbox"> Sample projects</li>
