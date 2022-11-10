@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://benlau.github.io/garden/constraints-are-friends/</loc>
+    <lastmod>2022-11-09T23:59:00+00:00</lastmod>
+  </url><url>
     <loc>https://benlau.github.io/</loc>
-    <lastmod>2022-10-31T04:55:13+00:00</lastmod>
+    <lastmod>2022-11-09T23:59:00+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/zettelkasten-software-diy/</loc>
     <lastmod>2022-10-27T06:43:56+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/</loc>
-    <lastmod>2022-10-30T11:00:53+00:00</lastmod>
+    <lastmod>2022-11-03T04:24:20+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/joplin/</loc>
-    <lastmod>2022-10-30T11:00:53+00:00</lastmod>
+    <lastmod>2022-11-03T04:24:20+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/luhmann-index-card-id/</loc>
     <lastmod>2022-10-30T11:00:53+00:00</lastmod>
@@ -39,16 +42,16 @@
     <lastmod>2022-10-12T18:12:24+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/the-design-of-design-essays-from-a-computer-scientist/</loc>
-    <lastmod>2022-10-31T04:38:01+00:00</lastmod>
+    <lastmod>2022-11-09T23:43:34+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/projects/joplin-dddot/</loc>
     <lastmod>2022-10-23T16:31:10+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/4-days-planner/</loc>
-    <lastmod>2022-10-17T05:02:57+00:00</lastmod>
+    <lastmod>2022-11-03T04:24:20+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/about/</loc>
-    <lastmod>2022-10-24T00:32:15+00:00</lastmod>
+    <lastmod>2022-11-03T02:11:57+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/gadget/</loc>
     <lastmod>2022-10-14T17:54:23+00:00</lastmod>
@@ -75,10 +78,10 @@
     <lastmod>2022-10-29T08:32:56+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/how-to-take-smart-notes-one-simple-technique-to-boost-writing-learning-and-thinking/</loc>
-    <lastmod>2022-10-30T00:48:30+00:00</lastmod>
+    <lastmod>2022-11-05T00:09:33+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/technology-radar/</loc>
-    <lastmod>2022-10-29T17:37:42+00:00</lastmod>
+    <lastmod>2022-11-05T03:17:05+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/%E7%9B%B2%E7%9B%AE%E6%B8%85%E9%9B%B6%E5%BE%92%E5%8B%9E%E7%84%A1%E5%8A%9F/</loc>
     <lastmod>2022-10-28T00:13:32+00:00</lastmod>
