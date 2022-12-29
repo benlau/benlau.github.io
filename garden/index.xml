@@ -9,6 +9,15 @@
     <copyright>Ben Lau ©</copyright>
     <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://benlau.github.io/garden/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Architecture Decision Record Template</title>
+      <link>https://benlau.github.io/garden/architecture-decision-record-template/</link>
+      <pubDate>Wed, 28 Dec 2022 23:30:02 +0000</pubDate>
+      
+      <guid>https://benlau.github.io/garden/architecture-decision-record-template/</guid>
+      <description>Architecture Decision Record Template</description>
+    </item>
+    
+    <item>
       <title>Constraints Are Friends</title>
       <link>https://benlau.github.io/garden/constraints-are-friends/</link>
       <pubDate>Wed, 09 Nov 2022 23:37:10 +0000</pubDate>

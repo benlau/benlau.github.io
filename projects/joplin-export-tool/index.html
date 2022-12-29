@@ -25,10 +25,10 @@
     
     
     
-    <title>Joplin Website Export Tool | Unlimited Build Works</title>
+    <title>Joplin Garden Worker | Unlimited Build Works</title>
     <meta name="description" content="">
     <link rel="icon" href="https://benlau.github.io/img/favicon.ico" />
-    <meta property="og:title" content="Joplin Website Export Tool"/>
+    <meta property="og:title" content="Joplin Garden Worker"/>
     <meta property="og:description" content=""/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://benlau.github.io/projects/joplin-export-tool/"/>
@@ -74,7 +74,7 @@
 <div class="container" style="max-width: 800px;">
     <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4 text-center">Joplin Website Export Tool</h1>
+            <h1 class="display-2 mb-4 text-center">Joplin Garden Worker</h1>
         </div>
         
         <div class="text-center pt-4">
@@ -88,7 +88,7 @@
                 
                     Created Oct 6, 2022 - 
                 
-                Last updated: Oct 31, 2022
+                Last updated: Nov 11, 2022
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -114,168 +114,26 @@
 
     <div class="container-fluid py-2">
         <div class="serif main-content">
-            <p>Joplin Garden Worker is a tool to export notes from Joplin to build a digital garden website. Unlike the traditional personal blog that publishes a set of articles in a reversed chronological order, the digital garden is a lot like a wiki with evolving ideas connected by links.</p>
-<p>This tool support exporting to a Github Wiki or Hugo Static Site Generator.</p>
+            <p>Joplin Garden Worker (JGW) is a tool to export notes from Joplin to build (but not limited to) a digital garden website.</p>
+<p>Unlike the traditional personal blog that publishes a set of articles in a reversed chronological order, the digital garden is a lot like a wiki with evolving ideas connected by links.</p>
+<p>The JGW exports the notes into a folder. It will modify the content like the link according to the engine chosen. If Hugo is chosen, you may build a static site using its command line tool based on the content from the export folder.</p>
+<p>Project Site: <a href="https://github.com/benlau/joplin-garden-worker">benlau/joplin-garden-worker: Export notes from Joplin to build a digital garden website</a></p>
 <p>Demo sites:</p>
 <ul>
 <li>Hugo: <a href="https://benlau.github.io/">Unlimited Build Works</a></li>
 <li>Github Wiki: <a href="https://github.com/benlau/benlau.github.io/wiki">benlau.github.io Wiki</a></li>
 </ul>
-<h2 id="features">Features</h2>
+<p>Features</p>
 <ul>
-<li>Exported tag filtered notes from Joplin</li>
+<li>Exported tag-filtered notes from Joplin</li>
 <li>Export to Hugo / Github Wiki</li>
 <li>Support link transclusion</li>
-<li>Support running custom post processing scripts
+<li>Support running custom post-processing scripts
 <ul>
 <li>e.g show backlinks on a note</li>
 </ul>
 </li>
 </ul>
-<h2 id="use-cases">Use-cases</h2>
-<ol>
-<li>Build digital garden</li>
-<li>Build a website of books</li>
-<li>Update the markdown document inside a software project</li>
-</ol>
-<h1 id="installation">Installation</h1>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone xxxx
-</span></span><span style="display:flex;"><span><span style="color:#111">cd</span> xxxx
-</span></span><span style="display:flex;"><span>npm install -g
-</span></span></code></pre></div><p>That will install <code>jgw</code> command line program on your machine.</p>
-<h1 id="getting-started-by-a-sample-project">Getting Started By a Sample Project</h1>
-<p>To create your digital garden, you need to choose the engine used. Currently, two kinds of engines are supported: GitHub Wiki / Hugo.</p>
-<p>And then create a <code>config.yaml</code> to store your perferences. You may provides a <code>hooks.js</code> to run script during the generation process to customize the behaviour.</p>
-<p>A sample config for building a Hugo website is available at <code>samples/hugo</code>. You need to install the hugo command line tool first.</p>
-<p><a href="https://gohugo.io/getting-started/installing/">Install Hugo | Hugo</a></p>
-<p>Preparation:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#111">cd</span> samples/hugo/beautiful
-</span></span><span style="display:flex;"><span>git clone https://github.com/halogenica/beautifulhugo.git themes/beautifulhugo
-</span></span></code></pre></div><p>The Usage:</p>
-<h2 id="obtain-the-api-key">Obtain the API key</h2>
-<p>To access your Data in Joplin, you need to get the API KEY. You may run the following commands:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#111">cd</span> samples/hugo/beautiful
-</span></span><span style="display:flex;"><span>$ jgw auth 
-</span></span></code></pre></div><p>And then you should launch Joplin and it will show a dialog to ask to grant permission for the request if you have web clipper enabled. (<a href="https://joplinapp.org/clipper/">Joplin Web Clipper | Joplin</a>). Accept the request then it will write a <code>.auth</code> file to store the API . If you holding the project inside a version control system like git. Please don&rsquo;t commit this file.</p>
-<h2 id="export-the-site">Export the site</h2>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#111">cd</span> samples/hugo/beautiful
-</span></span><span style="display:flex;"><span>$ jgw <span style="color:#111">export</span> site
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span> notes exported
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0</span> resources exported
-</span></span></code></pre></div><p>Run the above command to export the site to hugo. If it is showing <code>0 notes exported</code>, it is alright because you may not have any notes with the tag &ldquo;jgw-demo&rdquo;. Open the Joplin , and random tag a note you would like to export. Then rerun the above command.</p>
-<pre tabindex="0"><code>$ cd samples/hugo/beautiful/site
-hugo server -w
-</code></pre><p>Open the http://localhost:1313 in your browser. It should show a digital garden with notes exported from your Joplin.</p>
-<h2 id="advanced-usage">Advanced Usage</h2>
-<p>TBD</p>
-<h1 id="configuration">Configuration</h1>
-<p>The Joplin Garden Worker supports exporting a site and customizing the generation process. It needs to hold the configuration and script inside a project folder.</p>
-<p>The flow:</p>
-
-<div class="mermaid" align="center">
-graph LR
-Joplin --> ProjectFolder(Project Folder <br/>config.yaml<br/>metadata.yaml)
-ProjectFolder --> SiteFolder(SiteFolder<br/>contents/**/TITLE/index.md)
-</div>
-
-<p>Each project should contain at least 3 files:</p>
-<h2 id="configyaml">config.yaml</h2>
-<p>Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">engine</span><span style="color:#111">:</span> <span style="color:#ae81ff">hugo</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">hugoOptions</span><span style="color:#111">:</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">outputAsFolder</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">defaultFolder</span><span style="color:#111">:</span> <span style="color:#ae81ff">garden</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">stripHtmlComments</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">includeTags</span><span style="color:#111">:</span>
-</span></span><span style="display:flex;"><span> - <span style="color:#ae81ff">jgw</span>
-</span></span></code></pre></div><ul>
-<li>engine: The type of engine used. Available choices: githubwiki/hugo</li>
-<li>inclucedTags: It is an array of tags. Only the note with the tags will be exported.</li>
-<li>hugoOptions: Hugo specific options.
-<ul>
-<li>outputAsFolder: A option for Hugo only. By default, the garden worker generates a note in the format of <code>${folder}/${note-title}.md</code>. If outputAsFolder was set, it will become <code>${folder}/${note-title}/index.md</code>. It is designed to support Hugo theme that will show the featured image. The default value is true.</li>
-</ul>
-</li>
-<li>defaultFolder: The default output folder of a note.</li>
-<li>stripHtmlComments: If it is true , HTML comment blocks are removed from the exported note.</li>
-</ul>
-<h2 id="metadatayaml">metadata.yaml</h2>
-<p>This file contains the exported notes metadata. For example, garden worker generate the URL of an exported note according to the title. To perverse the URL to be changed by the title modification, garden worker stores the URL into this file.</p>
-<h2 id="hooksjs">hooks.js</h2>
-<p>You may customize the generation process by writing your own script inside hooks.js</p>
-<p>Example Usage:</p>
-<ul>
-<li>Set tags of the exported note</li>
-<li>Re-render the content (e.g remove private note)</li>
-<li>Append a footer to a specific note with a specific tag</li>
-</ul>
-<p>[[ Link to Example]]</p>
-<h1 id="commands">Commands</h1>
-<h2 id="obtain-the-joplin-api-key">Obtain the Joplin API Key</h2>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jgw auth
-</span></span></code></pre></div><h2 id="update-the-metadatayaml">Update the metadata.yaml</h2>
-<p>The <code>metadata.yaml</code> stores the metadata of the exported notes. Sometimes you may not want to export the notes directly and only updates the metadata.yaml to have a preview of changes. You may run this command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jgw update
-</span></span></code></pre></div><h2 id="exporting-the-site">Exporting the site</h2>
-<p>This command exports the notes to the target folder and it will also update the metadata.yaml</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jgw <span style="color:#111">export</span> OUTPUT_FOLDER
-</span></span></code></pre></div><h1 id="todo">Todo</h1>
-<ul>
-<li><input disabled="" type="checkbox"> User Guide</li>
-<li><input disabled="" type="checkbox"> Sample projects</li>
-<li><input disabled="" type="checkbox"> Code clean</li>
-<li><input disabled="" type="checkbox"> Release</li>
-<li><input checked="" disabled="" type="checkbox"> Backlinks</li>
-<li><input checked="" disabled="" type="checkbox"> Support mermaid</li>
-<li><input checked="" disabled="" type="checkbox"> Hide commented text</li>
-<li><input checked="" disabled="" type="checkbox"> Export Graphics</li>
-<li><input checked="" disabled="" type="checkbox"> Export to Github Wiki</li>
-<li><input checked="" disabled="" type="checkbox"> Export to Static Site Generator</li>
-<li><input checked="" disabled="" type="checkbox"> Test Chinese Title</li>
-<li><input checked="" disabled="" type="checkbox"> Open Graph Support</li>
-</ul>
-<h2 id="future">Future</h2>
-<ul>
-<li><input disabled="" type="checkbox"> Support to export and download non-image files</li>
-<li><input disabled="" type="checkbox"> Link Graph Generation</li>
-</ul>
-<h1 id="resources">Resources</h1>
-<ul>
-<li><a href="https://github.com/benlau/hugo-digital-garden-theme">Customized Hugo Theme for digital gardening projects.</a></li>
-</ul>
-<h1 id="tests">Tests</h1>
-<h2 id="link">Link</h2>
-<p>Links:</p>
-<ul>
-<li><a href="https://benlau.github.io/garden/logitech-mx-master-3-mouse/">Logitech MX Master 3 Mouse</a></li>
-<li><a href="https://benlau.github.io/garden/logitech-k380-bluetooth-keyboard/">Logitech K380 Bluetooth Keyboard</a></li>
-</ul>
-<p>Chinese Links</p>
-<ul>
-<li><a href="https://benlau.github.io/library/%E7%9B%B2%E7%9B%AE%E6%B8%85%E9%9B%B6%E5%BE%92%E5%8B%9E%E7%84%A1%E5%8A%9F/">盲目清零，徒勞無功</a></li>
-</ul>
-<h2 id="mermaid">Mermaid</h2>
-
-<div class="mermaid" align="center">
-graph LR 
-A --> B
-</div>
-
-<h2 id="code">Code</h2>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75af00">console</span><span style="color:#111">.</span><span style="color:#75af00">log</span><span style="color:#111">(</span><span style="color:#d88200">&#34;test&#34;</span><span style="color:#111">)</span>
-</span></span></code></pre></div><h2 id="images">Images</h2>
-<p><img src="https://user-images.githubusercontent.com/82716/193397815-c3cbfa48-0507-4341-8125-2bdb63877b3c.png" alt="External Links"></p>
-<h2 id="comment">Comment</h2>
-<p>It should hide commented section.</p>
-<p>e.g</p>
-<pre tabindex="0"><code></code></pre><h2 id="embed-other-note">Embed other note</h2>
-<p>Embed the &ldquo;About Ben Lau&rdquo; page</p>
-<p>Syntax: ! [xx] (:/ID)</p>
-<p>I am a conceptor, maker, and full-stack developer who keeps building open-source projects and thinks that the purpose of life is to create.</p>
-<p>This site is my <a href="https://benlau.github.io/garden/digital-garden/">digital garden</a>, a place to share and grow idea. You may find my working projects and evergreen notes here. The content come from my notes in Joplin. I write a <a href="https://benlau.github.io/projects/joplin-export-tool/">Joplin Web Export Tool</a> to convert to Hugo (Static Site Generator). I hope you will find some interesting stuff here.</p>
-<p>This site is powered by <a href="https://joplinapp.org/">Joplin</a>, <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/paulmartins/hugo-digital-garden-theme">Hugo Theme for digital gardening projects</a>.</p>
-<hr>
-<p>如果說廣東話能夠代表香港人，那麼我認為中英夾雜的語言也有香港的味道，所以這個網站也會採用這個形式⋯⋯這是場面話，作為數位花園的一個特徵是為自己而寫，用中文還是英文其實是看心情及難度，寫技術的東西是英文比較快，寫心情概念還是母語會比較輕鬆。</p>
 
         </div>
         <div class="text-center pt-4">
