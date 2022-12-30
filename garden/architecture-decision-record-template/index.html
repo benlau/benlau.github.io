@@ -90,7 +90,7 @@
                 
                     Created Dec 28, 2022 - 
                 
-                Last updated: Dec 29, 2022
+                Last updated: Dec 30, 2022
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -108,24 +108,33 @@
 
     <div class="container-fluid py-2">
         <div class="serif main-content">
-            <p># Title</p>
-<p>## Status</p>
-<p>Date: <script type="text/javascript">
-const date = new Date();
-const [month, day, year] = [date.getMonth()+1, date.getDate(), date.getFullYear()];
-document.write(`${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`)
-</script>
-</p>
-<p>Accepted | Proposed</p>
-<p>## Context</p>
-<p>-	What is the issue that we&rsquo;re seeing that is motivating this decision or change?</p>
-<p>## Decision</p>
-<p>-	What is the change that we&rsquo;re proposing and/or doing?</p>
-<p>## Consequences</p>
-<p>-	What becomes easier or more difficult to do because of this change?</p>
+            <pre style="background-color: rgba(27,31,35,5%);white-space:pre-wrap;">
+&#35; Title
+&#35;&#35; Status
+Date: <script type="text/javascript">const date = new Date();const [month, day, year] = [date.getMonth()+1, date.getDate(), date.getFullYear()];document.write(`${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`)</script>
+Accepted | Proposed
+&#35;&#35; Context
+&#45; What is the issue that we're seeing that is motivating this decision or change?
+&#35;&#35; Decision
+&#45; What is the change that we're proposing and/or doing?
+&#35;&#35; Consequences
+&#45; What becomes easier or more difficult to do because of this change?
+</pre>
+
+
+<hr>
+<p>這是我在用的Architecture Decision Record(ADR)的範本，本來這東西一般是放在VCS中的，但我決定把自己做的決定放在Joplin中，方便建立連結。</p>
 
         </div>
         <div class="text-center pt-4">
+            
+            <hr class="dropdown-divider">            
+            
+            <a href="/garden/4-days-planner" role="button" class="btn btn-sm btn-link mx-2">
+                <i class="fas fs-5"></i>
+            4 Days Planner
+            </a>
+            
             
         </div>
     </div>

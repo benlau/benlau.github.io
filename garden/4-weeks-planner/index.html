@@ -88,7 +88,7 @@
                 
                     Created Oct 10, 2022 - 
                 
-                Last updated: Oct 12, 2022
+                Last updated: Dec 30, 2022
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -137,6 +137,7 @@ today.setHours(0,0,0,0);
 const begin = new Date(today.getTime())
 begin.setDate(begin.getDate() - begin.getDay());
 
+document.write("<pre style='background-color: rgba(27,31,35,5%);white-space:pre-wrap;'>");
 for (let i in Array.from(Array(4).keys())) {
     const start = new Date(begin.getTime())
     start.setDate(start.getDate() + i * 7);
@@ -144,6 +145,7 @@ for (let i in Array.from(Array(4).keys())) {
     end.setDate(end.getDate() + 6);
     document.write(`# ${start.format()} ~ ${end.format()} Week: ${start.getWeek()}<p></p><p></p>`);
 }
+document.write("</pre>")
 </script>
   
   
