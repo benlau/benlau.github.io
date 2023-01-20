@@ -88,7 +88,7 @@
                 
                     Created Oct 10, 2022 - 
                 
-                Last updated: Dec 30, 2022
+                Last updated: Jan 20, 2023
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -112,6 +112,74 @@
         <div class="serif main-content">
             <h1 id="markdown-template">Markdown Template</h1>
 <hr>
+<script type="text/javascript">
+Date.prototype.getWeek = function() {
+    var date = new Date(this.getTime());
+    date.setHours(0, 0, 0, 0);
+    
+    date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
+    
+    var week1 = new Date(date.getFullYear(), 0, 4);
+    
+    return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000
+                          - 3 + (week1.getDay() + 6) % 7) / 7);
+}
+
+Date.prototype.getDaysOfMonth = function() {
+    const [month, year] = [this.getUTCMonth()+1,  this.getUTCFullYear()];
+    return new Date(year, month, 0).getDate();
+}
+
+Date.prototype.format = function() {
+    const [month, day, year, dayOfWeek] = [this.getMonth()+1, this.getDate(), this.getFullYear(), this.getDay()];
+    return `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`
+}
+
+Date.today = function() {
+    const today = new Date();
+    today.setUTCHours(0,0,0,0);
+    return today;
+}
+
+function gen_markdown_calender_from_date(date) {
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const contents = [];
+    const currentMonth = date.getUTCMonth();
+
+    contents.push(`# ${months[currentMonth]} ${date.getUTCFullYear()}`);
+    contents.push("|Sun|Mon|Tue|Wed|Thu|Fri|Sat|");
+    contents.push("|:-:|:-:|:-:|:-:|:-:|:-:|:-:|");
+
+    const begin = new Date(date.getTime())
+    begin.setUTCDate(1);
+    begin.setDate(begin.getDate() - begin.getDay());
+
+    for (let i in Array.from(Array(5).keys())) {
+        const start = new Date(begin.getTime())
+        start.setUTCDate(start.getUTCDate() + i * 7);
+        if (start.getUTCMonth() != currentMonth && i > 0) {
+            continue;
+        }
+        const days = Array.from(Array(7).keys()).map((i) => {
+            const day = new Date(start.getTime())
+            day.setUTCDate(day.getUTCDate() + i);
+            return day.getUTCDate();
+        });
+        contents.push(`|${days.join("|")}|`);
+    }
+    return contents.join("\n");
+}
+
+function gen_markdown_calender_from_offset(offset) {
+    const date = new Date();
+    date.setUTCMonth(date.getUTCMonth() + offset);
+    console.log(date);
+    return gen_markdown_calender_from_date(date);
+}
+</script>
+<pre style='background-color: rgba(27,31,35,5%);white-space:pre-wrap;'>
+<script type="text/javascript">document.write(gen_markdown_calender_from_offset( 0 ));</script>
+<p></pre></p>
 
 
   <script type="text/javascript">
@@ -151,6 +219,74 @@ document.write("</pre>")
   
 
 
+<script type="text/javascript">
+Date.prototype.getWeek = function() {
+    var date = new Date(this.getTime());
+    date.setHours(0, 0, 0, 0);
+    
+    date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
+    
+    var week1 = new Date(date.getFullYear(), 0, 4);
+    
+    return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000
+                          - 3 + (week1.getDay() + 6) % 7) / 7);
+}
+
+Date.prototype.getDaysOfMonth = function() {
+    const [month, year] = [this.getUTCMonth()+1,  this.getUTCFullYear()];
+    return new Date(year, month, 0).getDate();
+}
+
+Date.prototype.format = function() {
+    const [month, day, year, dayOfWeek] = [this.getMonth()+1, this.getDate(), this.getFullYear(), this.getDay()];
+    return `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`
+}
+
+Date.today = function() {
+    const today = new Date();
+    today.setUTCHours(0,0,0,0);
+    return today;
+}
+
+function gen_markdown_calender_from_date(date) {
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const contents = [];
+    const currentMonth = date.getUTCMonth();
+
+    contents.push(`# ${months[currentMonth]} ${date.getUTCFullYear()}`);
+    contents.push("|Sun|Mon|Tue|Wed|Thu|Fri|Sat|");
+    contents.push("|:-:|:-:|:-:|:-:|:-:|:-:|:-:|");
+
+    const begin = new Date(date.getTime())
+    begin.setUTCDate(1);
+    begin.setDate(begin.getDate() - begin.getDay());
+
+    for (let i in Array.from(Array(5).keys())) {
+        const start = new Date(begin.getTime())
+        start.setUTCDate(start.getUTCDate() + i * 7);
+        if (start.getUTCMonth() != currentMonth && i > 0) {
+            continue;
+        }
+        const days = Array.from(Array(7).keys()).map((i) => {
+            const day = new Date(start.getTime())
+            day.setUTCDate(day.getUTCDate() + i);
+            return day.getUTCDate();
+        });
+        contents.push(`|${days.join("|")}|`);
+    }
+    return contents.join("\n");
+}
+
+function gen_markdown_calender_from_offset(offset) {
+    const date = new Date();
+    date.setUTCMonth(date.getUTCMonth() + offset);
+    console.log(date);
+    return gen_markdown_calender_from_date(date);
+}
+</script>
+<pre style='background-color: rgba(27,31,35,5%);white-space:pre-wrap;'>
+<script type="text/javascript">document.write(gen_markdown_calender_from_offset( 1 ));</script>
+<p></pre></p>
 <hr>
 <h3 id="todo">TODO</h3>
 <ul>
@@ -181,7 +317,7 @@ document.write("</pre>")
         </div><div class="container">
     <div class="row justify-content-between">
         <div class="col-sm-4">
-            <p class="footer">Ben Lau © 2022 </p>
+            <p class="footer">Ben Lau © 2023 </p>
         </div>
         <div class="col-sm-6 d-flex flex-row-reverse">
             

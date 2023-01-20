@@ -2,23 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://benlau.github.io/garden/architecture-decision-record-template/</loc>
-    <lastmod>2022-12-30T17:28:25+00:00</lastmod>
+    <loc>https://benlau.github.io/garden/dry-dont-repeat-yourself/</loc>
+    <lastmod>2023-01-16T05:15:19+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/</loc>
-    <lastmod>2022-12-30T17:35:20+00:00</lastmod>
+    <lastmod>2023-01-20T17:29:19+00:00</lastmod>
+  </url><url>
+    <loc>https://benlau.github.io/garden/architecture-decision-record-template/</loc>
+    <lastmod>2022-12-31T02:52:56+00:00</lastmod>
+  </url><url>
+    <loc>https://benlau.github.io/garden_tags/</loc>
+    <lastmod>2023-01-20T17:29:19+00:00</lastmod>
+  </url><url>
+    <loc>https://benlau.github.io/garden_tags/joplin/</loc>
+    <lastmod>2023-01-20T17:29:19+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/constraints-are-friends/</loc>
     <lastmod>2022-11-16T02:27:32+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/zettelkasten-software-diy/</loc>
     <lastmod>2022-10-27T06:43:56+00:00</lastmod>
-  </url><url>
-    <loc>https://benlau.github.io/garden_tags/</loc>
-    <lastmod>2022-12-30T17:35:20+00:00</lastmod>
-  </url><url>
-    <loc>https://benlau.github.io/garden_tags/joplin/</loc>
-    <lastmod>2022-12-30T17:35:20+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/luhmann-index-card-id/</loc>
     <lastmod>2022-10-30T11:00:53+00:00</lastmod>
@@ -42,16 +45,16 @@
     <lastmod>2022-10-21T12:17:02+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/4-weeks-planner/</loc>
-    <lastmod>2022-12-30T17:35:20+00:00</lastmod>
+    <lastmod>2023-01-20T17:29:19+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/the-design-of-design-essays-from-a-computer-scientist/</loc>
-    <lastmod>2022-12-29T00:56:31+00:00</lastmod>
+    <lastmod>2022-12-31T02:21:31+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/projects/joplin-dddot/</loc>
     <lastmod>2022-10-23T16:31:10+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/4-days-planner/</loc>
-    <lastmod>2022-12-30T17:30:27+00:00</lastmod>
+    <lastmod>2022-12-31T13:57:43+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/about/</loc>
     <lastmod>2022-11-03T02:11:57+00:00</lastmod>
@@ -72,7 +75,7 @@
     <lastmod>2022-10-10T17:49:38+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/digital-garden/</loc>
-    <lastmod>2022-10-23T13:02:28+00:00</lastmod>
+    <lastmod>2023-01-01T11:22:59+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/critiqued-inside-the-minds-of-23-leaders-in-design/</loc>
     <lastmod>2022-10-18T06:51:10+00:00</lastmod>
@@ -84,7 +87,7 @@
     <lastmod>2022-11-05T00:09:33+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/technology-radar/</loc>
-    <lastmod>2022-12-29T04:56:33+00:00</lastmod>
+    <lastmod>2023-01-04T17:21:50+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/%E7%9B%B2%E7%9B%AE%E6%B8%85%E9%9B%B6%E5%BE%92%E5%8B%9E%E7%84%A1%E5%8A%9F/</loc>
     <lastmod>2022-10-28T00:13:32+00:00</lastmod>
