@@ -25,13 +25,13 @@
     
     
     
-    <title>gadget | Unlimited Build Works</title>
-    <meta name="description" content="">
+    <title>Web Component | Unlimited Build Works</title>
+    <meta name="description" content="Web Component">
     <link rel="icon" href="https://benlau.github.io/img/favicon.ico" />
-    <meta property="og:title" content="gadget"/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="Web Component"/>
+    <meta property="og:description" content="Web Component"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://benlau.github.io/garden_tags/gadget/"/>
+    <meta property="og:url" content="https://benlau.github.io/garden/web-component/"/>
     
     <meta property="og:image" content="https://benlau.github.io/img/ogimage.png"/>
     <meta property="og:image:url" content="https://benlau.github.io/img/ogimage.png"/>
@@ -71,89 +71,78 @@
     </div>
 </nav><div id="content">
 
-<div class="container">
-    <div class="py-5 rounded-3">
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4">gadget</h1>
-            <p class="bio col-md-8 fs-4 serif"></p>
+            <h1 class="display-2 mb-4 text-center">Web Component</h1>
+        </div>
+        
+        <p class="text-center fs-4 fst-italic serif">Web Component</p>
+        
+        <div class="text-center pt-4">
+            
         </div>
     </div>
-</div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created Apr 12, 2023 - 
+                
+                Last updated: Oct 14, 2023
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="container">
-    
-    <p>
-        <h3><a class="title" href="/garden/mageasy-a5-folio2/">MagEasy A5 Folio 2.0</a></h3>
-        
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <h1 id="測試目的">測試目的</h1>
+<ul>
+<li>想尋找Web Componet在iframe以外的用途</li>
+<li>Jupyter Plugin / Joplin Plugin 的套件範例都包了很舊的build script，在不修改build script的情況(不想挑戰)，用Web Component編寫擴充功能會不會更好呢？</li>
+</ul>
+<h1 id="發現">發現</h1>
+<ul>
+<li>
+<p>Shadow DOM有著Style isolation的特性，不會承繼外面的style，當然也反過來不會影響到shadow dom以外， 本身是好的設計，但許多css framework都不支援，又或要修改build script</p>
+</li>
+<li>
+<p>最後用上 JSS (JavaScript Style Sheet) 解決</p>
+</li>
+<li>
+<p>Font的問題則是反過來，並不提供任何isolation機制，你需要自行在root document中載入，又或者不使用shadow dom機制（哪要web component來幹麼？）</p>
+</li>
+<li>
+<p>attributes / event</p>
+<ul>
+<li>用attribute來傳遞資料，但只限基本類型，Object類要先用JSON.stringify轉成文字，這並不方便</li>
+<li>用Event來接收來自web component的事件</li>
+</ul>
+</li>
+<li>
+<p>template &amp; slot - 在測試中沒有用到，沒有意見</p>
+</li>
+</ul>
+<h1 id="結論">結論</h1>
+<p>Font及style的差別做法令人感到很頭痛，畢竟經常要到像是Font Awesome類型的圖示，放棄使用Shadow dom的話還不如不要使用Web Component，使用體驗就像雞肋一樣，食之無味，棄之可惜。</p>
 
-<i data-feather="calendar"></i>
-<time datetime="2023-09-20">Sep 20, 2023</time>
-
-        <a class="summary" href="/garden/mageasy-a5-folio2/">
-            <p></p>
-        </a>
-    </p>
-    
-    <p>
-        <h3><a class="title" href="/garden/nuc10i7fnh/">NUC10i7FNH</a></h3>
-        
-
-<i data-feather="calendar"></i>
-<time datetime="2023-01-22">Jan 22, 2023</time>
-
-        <a class="summary" href="/garden/nuc10i7fnh/">
-            <p></p>
-        </a>
-    </p>
-    
-    <p>
-        <h3><a class="title" href="/garden/lg-27uk850/">LG 27UK850</a></h3>
-        
-
-<i data-feather="calendar"></i>
-<time datetime="2022-10-13">Oct 13, 2022</time>
-
-        <a class="summary" href="/garden/lg-27uk850/">
-            <p></p>
-        </a>
-    </p>
-    
-    <p>
-        <h3><a class="title" href="/garden/papeaso-video-capture-card/">Papeaso Video Capture Card</a></h3>
-        
-
-<i data-feather="calendar"></i>
-<time datetime="2022-10-06">Oct 6, 2022</time>
-
-        <a class="summary" href="/garden/papeaso-video-capture-card/">
-            <p></p>
-        </a>
-    </p>
-    
-    <p>
-        <h3><a class="title" href="/garden/logitech-mx-master-3-mouse/">Logitech MX Master 3 Mouse</a></h3>
-        
-
-<i data-feather="calendar"></i>
-<time datetime="2022-10-06">Oct 6, 2022</time>
-
-        <a class="summary" href="/garden/logitech-mx-master-3-mouse/">
-            <p></p>
-        </a>
-    </p>
-    
-    <p>
-        <h3><a class="title" href="/garden/logitech-k380-bluetooth-keyboard/">Logitech K380 Bluetooth Keyboard</a></h3>
-        
-
-<i data-feather="calendar"></i>
-<time datetime="2022-10-06">Oct 6, 2022</time>
-
-        <a class="summary" href="/garden/logitech-k380-bluetooth-keyboard/">
-            <p></p>
-        </a>
-    </p>
-    
+        </div>
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
 </div>
 
 
