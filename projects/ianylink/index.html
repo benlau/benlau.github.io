@@ -25,18 +25,16 @@
     
     
     
-    <title>Technology Radar | Unlimited Build Works</title>
-    <meta name="description" content="">
+    <title>IAnyLink | Unlimited Build Works</title>
+    <meta name="description" content="Convert App Links to Universal Web Links">
     <link rel="icon" href="https://benlau.github.io/img/favicon.ico" />
-    <meta property="og:title" content="Technology Radar"/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="IAnyLink"/>
+    <meta property="og:description" content="Convert App Links to Universal Web Links"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://benlau.github.io/garden/technology-radar/"/>
+    <meta property="og:url" content="https://benlau.github.io/projects/ianylink/"/>
     
-    <meta property="og:image" content="https://benlau.github.io/img/ogimage.png"/>
-    <meta property="og:image:url" content="https://benlau.github.io/img/ogimage.png"/>
-    <meta property="og:image:width" content="199"/>
-    <meta property="og:image:height" content="150"/>
+    
+    <meta property="og:image" content="https://benlau.github.io/projects/ianylink/featured.png"/>
     
 
 </head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -74,8 +72,10 @@
 <div class="container" style="max-width: 800px;">
     <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4 text-center">Technology Radar</h1>
+            <h1 class="display-2 mb-4 text-center">IAnyLink</h1>
         </div>
+        
+        <p class="text-center fs-4 fst-italic serif">Convert App Links to Universal Web Links</p>
         
         <div class="text-center pt-4">
             
@@ -86,7 +86,7 @@
             <p class="card-date m-0">
                 
                 
-                    Created May 12, 2022 - 
+                    Created Nov 1, 2023 - 
                 
                 Last updated: Nov 1, 2023
             </p>
@@ -94,10 +94,6 @@
             <div class="row justify-content-between">
                 <div class="col-sm-4">
                     
-    
-    <span class="status">Seeding 🌱</span>
-    
-
                 </div>
                 <div class="col-sm-8" style="text-align: right;">
                     
@@ -110,111 +106,45 @@
 
     <div class="container-fluid py-2">
         <div class="serif main-content">
-            <h1 id="radar-stages">Radar Stages</h1>
+            <p>Many modern apps support app links, allowing users to open specific content directly. However, these links often have a problem: they are not supported by other apps, making it impossible to click and open them quickly. Cross-linking between applications is not as trivial as it may seem.</p>
+<p>The IAnyLink project is designed to solve this problem. It can convert app links into regular web links (pretending an universal link)</p>
+<h1 id="examples">Examples:</h1>
 <table>
-<thead>
-<tr>
-<th>Stage</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Adopt</td>
-<td>Adopted in my tech stack and I recommend anyone to try it</td>
-</tr>
-<tr>
-<td>Trial</td>
-<td>I am using it but I don&rsquo;t have confidence to recommend it yet</td>
-</tr>
-<tr>
-<td>Assess</td>
-<td>I would like to give it a try</td>
-</tr>
-<tr>
-<td>Hold</td>
-<td>Hold off for now (and future?)</td>
-</tr>
-<tr>
-<td>No-go</td>
-<td>Don&rsquo;t think about it</td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th></th>
+      <th>App Link</th>
+      <th>Web Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Joplin</td>
+      <td><a href="joplin://x-callback-url/openNote?id=note_id">joplin://x-callback-url/openNote?id=note_id</a></td>
+      <td><a href="https://benlau.github.io/l/u/am9wbGluOi8veC1jYWxsYmFjay11cmwvb3Blbk5vdGU_aWQ9bm90ZV9pZA==">https://benlau.github.io/l/u/am9wbGluOi8veC1jYWxsYmFj<br>ay11cmwvb3Blbk5vdGU_aWQ9bm90ZV9pZA==</a></td>
+    </tr>
+    <tr>
+      <td>Obsidian</td>
+      <td><a href="obsidian://open?vault=your_vault&file=YOUR_NOTE">obsidian://open?vault=your_vault&file=YOUR_NOTE</a></td>
+      <td><a href="https://benlau.github.io/l/u/b2JzaWRpYW46Ly9vcGVuP3ZhdWx0PXlvdXJfdmF1bHQmZmlsZT1ZT1VSX05PVEU=">https://benlau.github.io/l/u/b2JzaWRpYW46Ly9vcGVuP3ZhdWx<br>0PXlvdXJfdmF1bHQmZmlsZT1ZT1VSX05PVEU=</a></td>
+    </tr>
+    <tr>
+      <td>VSCode</td>
+      <td><a href="vscode://file/your-local-file-path">vscode://file/your-local-file-path</a></td>
+      <td><a href="https://benlau.github.io/l/u/dnNjb2RlOi8vZmlsZS95b3VyLWxvY2FsLWzpbGUtcGF0aA==">https://benlau.github.io/l/u/dnNjb2RlOi8vZmlsZS95<br>b3vy-LWxvY2FsLWzpbGUtcGF0aA==</a></td>
+    </tr>
+    <tr>
+      <td>Mailto Link</td>
+      <td><a href="mailto:test@example.com?subject=Testing out mailto!">mailto:test@example.com?subject=Testing out mailto!</a></td>
+      <td><a href="https://benlau.github.io/l/u/bWFpbHRvOnRlc3RAZXhhbXBsZS5jb20_c3ViamVjdD1UZXN0aW5nIG91dCBtYWlsdG8h">https://benlau.github.io/l/u/bWFpbHRvOnRlc3RAZXhhbXBsZS<br>5jb20_c3ViamVjdD1UZXN0aW5nIG91dCBtYWlsdG8h</a></td>
+    </tr>
+  </tbody>
 </table>
-<hr>
-<h1 id="adopt">Adopt</h1>
-<ul>
-<li>Vision: OpenCV</li>
-<li>Applications: Joplin, Syncthing</li>
-<li>Diagram as Code: PlantUML, Mermaid</li>
-<li>Monorepo: Poetry</li>
-<li>Infrastructure: k8s, helm, Glitchtip</li>
-<li>UI Frameworks: Qt, React</li>
-<li>Methodology: Zettelkasten, GTD, PARA, TDD</li>
-</ul>
-<h1 id="trial">Trial</h1>
-<ul>
-<li>Stable Diffusion</li>
-<li>Conda</li>
-<li>Yolo/OnnX</li>
-<li>SwiftUI</li>
-<li>WASM</li>
-<li><a href="https://www.npmjs.com/package/terminal-kit">terminal-kit - npm</a></li>
-<li>ChatGPT</li>
-<li>Hugo</li>
-<li>Parcel.js</li>
-<li>Ferdium
-<ul>
-<li>Slack Desktop有時候比Chrome更耗電，改用Ferdium後，問題大為改善，但語音對話不行，搜尋功能會點擊不到</li>
-<li>Google服務不許用Ferdium登入</li>
-<li>Discord會出現令login session重設的問題</li>
-<li>Telegram的體驗不錯</li>
-</ul>
-</li>
-<li>Foam</li>
-<li>Jupyter for Devops</li>
-</ul>
-<h1 id="assess">Assess</h1>
-<ul>
-<li><a href="https://github.com/codex-team/editor.js">codex-team/editor.js: A block-styled editor with clean JSON output</a>
-<ul>
-<li>for <a href="https://benlau.github.io/projects/memoinjo/">MemoInjo</a> ?</li>
-<li>for <a href="https://benlau.github.io/projects/joplin-dddot/">Joplin DDDot Project</a> ?</li>
-</ul>
-</li>
-<li>Turborepo</li>
-<li><a href="https://godotengine.org/">Godot Engine</a></li>
-<li><a href="https://npm.io/package/react-virtual-kanban">React-virtual-kanban NPM | npm.io</a></li>
-<li>Passkey</li>
-<li><a href="https://github.com/dcasati/kubernetes-PlantUML#using-kubernetes-plantuml-with-other-plantuml-files">GitHub - dcasati/kubernetes-PlantUML: Kubernetes diagrams using VS Code</a></li>
-<li>Docker+WASM</li>
-<li>C++20</li>
-<li><a href="https://recoiljs.org/">Recoil</a></li>
-<li>React Query</li>
-<li>Tailwind</li>
-<li><a href="https://github.com/pmndrs/zustand">pmndrs/zustand</a></li>
-<li>FastSAM</li>
-<li>Jetpack Compose</li>
-<li>Bun</li>
-<li><a href="https://lexical.dev/">Lexical</a></li>
-</ul>
-<h1 id="hold">Hold</h1>
-<ul>
-<li>Prisma Cloud</li>
-<li>Amplenote</li>
-<li>Abbyy</li>
-<li>Vitejs</li>
-<li>octant</li>
-<li><a href="https://structurizr.com/">Structurizr</a></li>
-<li>Qwik - O(1) framework</li>
-<li><a href="https://benlau.github.io/garden/web-component/">Web Component</a></li>
-</ul>
-<h1 id="no-go">No-go</h1>
-<ul>
-<li>Evernote</li>
-<li>Gitbook (v1)</li>
-<li>Goodnotes</li>
-</ul>
+<h1 id="information">Information</h1>
+<p>Service site: <a href="https://benlau.github.io/">https://benlau.github.io/</a></p>
+<p>Project site: <a href="https://github.com/benlau/l">https://github.com/benlau/l</a></p>
+<h2 id="screenshots">Screenshots:</h2>
+<p><img src="/res/ba1f3a5fe75147e5a089c9c96c564a10/9d73bfc31f4b26363be4f008f7685078.png" alt="9d73bfc31f4b26363be4f008f7685078.png"></p>
 
         </div>
         <div class="text-center pt-4">

@@ -9,6 +9,15 @@
     <copyright>Ben Lau ©</copyright>
     <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://benlau.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>IAnyLink</title>
+      <link>https://benlau.github.io/projects/ianylink/</link>
+      <pubDate>Wed, 01 Nov 2023 17:34:24 +0000</pubDate>
+      
+      <guid>https://benlau.github.io/projects/ianylink/</guid>
+      <description>Convert App Links to Universal Web Links</description>
+    </item>
+    
+    <item>
       <title>MemoInjo</title>
       <link>https://benlau.github.io/projects/memoinjo/</link>
       <pubDate>Thu, 13 Oct 2022 04:14:04 +0000</pubDate>
