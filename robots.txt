@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Sitemap: https://benlau.github.io/sitemap.xml
+
