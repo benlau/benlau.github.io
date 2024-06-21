@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>trial on Unlimited Build Works</title>
+    <link>https://benlau.github.io/techradar_tags/trial/</link>
+    <description>Recent content in trial on Unlimited Build Works</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Ben Lau ©</copyright>
+    <lastBuildDate>Sat, 05 Aug 2023 05:28:01 +0000</lastBuildDate><atom:link href="https://benlau.github.io/techradar_tags/trial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jupyter for DevOps</title>
+      <link>https://benlau.github.io/garden/jupyter-for-devops/</link>
+      <pubDate>Sat, 05 Aug 2023 05:28:01 +0000</pubDate>
+      
+      <guid>https://benlau.github.io/garden/jupyter-for-devops/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
