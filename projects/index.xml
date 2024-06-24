@@ -9,6 +9,15 @@
     <copyright>Ben Lau ©</copyright>
     <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://benlau.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Lora人物模型</title>
+      <link>https://benlau.github.io/projects/lora-char-model/</link>
+      <pubDate>Mon, 24 Jun 2024 14:12:09 +0000</pubDate>
+      
+      <guid>https://benlau.github.io/projects/lora-char-model/</guid>
+      <description>遊戲人物</description>
+    </item>
+    
+    <item>
       <title>廣東話口述講稿整理GPTs</title>
       <link>https://benlau.github.io/projects/cantonese-gpts/</link>
       <pubDate>Fri, 26 Apr 2024 02:28:41 +0000</pubDate>
