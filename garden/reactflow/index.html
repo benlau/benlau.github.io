@@ -71,6 +71,24 @@
     </div>
 </nav><div id="content">
 
+
+
+<script>
+document.addEventListener('keydown', function(event) {
+    
+    if (event.metaKey && event.key === 'o') {
+        
+        event.preventDefault();
+
+        
+        const url = "joplin:\/\/x-callback-url\/openNote?id=ce71149c6d654dbeae645df28986f8f8";
+
+        
+        location.href = url;
+    }
+});
+</script>
+
 <div class="container" style="max-width: 800px;">
     <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
@@ -88,7 +106,7 @@
                 
                     Created May 25, 2024 - 
                 
-                Last updated: Jun 25, 2024
+                Last updated: Jun 26, 2024
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -140,7 +158,11 @@
 </ul>
 <h1 id="alternative">Alternative?</h1>
 <ul>
-<li>jagenjo/litegraph.js</li>
+<li>jagenjo/litegraph.js
+<ul>
+<li>Used by ComfyUI</li>
+</ul>
+</li>
 <li><a href="https://retejs.org/?fbclid=IwZXh0bgNhZW0CMTAAAR2B8-bM6SYcnFdX-htTq1ribGcA8p6pL7VHFqikhhQnB_YaFG5qqpjVznM_aem_zPDwoqsgr_16-Gn5h5WVkw">Rete.js - JavaScript framework for visual programming</a></li>
 </ul>
 <!-- JoplinContentEnd //-->

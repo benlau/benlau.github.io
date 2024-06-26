@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Ben Lau ©</copyright>
-    <lastBuildDate>Sun, 23 Jun 2024 02:48:25 +0000</lastBuildDate><atom:link href="https://benlau.github.io/garden_tags/second-brain/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jun 2024 17:22:55 +0000</lastBuildDate><atom:link href="https://benlau.github.io/garden_tags/second-brain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>quarto</title>
+      <link>https://benlau.github.io/garden/quarto/</link>
+      <pubDate>Wed, 26 Jun 2024 17:22:55 +0000</pubDate>
+      
+      <guid>https://benlau.github.io/garden/quarto/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Google NotebookLM</title>
       <link>https://benlau.github.io/garden/notebooklm/</link>

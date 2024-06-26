@@ -71,6 +71,24 @@
     </div>
 </nav><div id="content">
 
+
+
+<script>
+document.addEventListener('keydown', function(event) {
+    
+    if (event.metaKey && event.key === 'o') {
+        
+        event.preventDefault();
+
+        
+        const url = "joplin:\/\/x-callback-url\/openNote?id=16b267c397e16809d76ae542fa45f14a";
+
+        
+        location.href = url;
+    }
+});
+</script>
+
 <div class="container" style="max-width: 800px;">
     <div class="py-4 rounded-3">
         <div class="container-fluid py-2">

@@ -71,6 +71,24 @@
     </div>
 </nav><div id="content">
 
+
+
+<script>
+document.addEventListener('keydown', function(event) {
+    
+    if (event.metaKey && event.key === 'o') {
+        
+        event.preventDefault();
+
+        
+        const url = "joplin:\/\/x-callback-url\/openNote?id=5292245c50164fdc9b7f7892b39f0ee8";
+
+        
+        location.href = url;
+    }
+});
+</script>
+
 <div class="container" style="max-width: 800px;">
     <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
@@ -88,7 +106,7 @@
                 
                     Created Jun 24, 2024 - 
                 
-                Last updated: Jun 25, 2024
+                Last updated: Jun 26, 2024
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -118,12 +136,20 @@
 <li>Not expensive</li>
 <li>With Jupyter Note Interface</li>
 </ul>
+<h1 id="finding">Finding</h1>
+<ul>
+<li>Network Volume is resizable after creation</li>
+</ul>
 <h1 id="ai-dock-docker-images">ai-dock docker images</h1>
 <p><a href="https://github.com/ai-dock">https://github.com/ai-dock</a></p>
+<p>Images:</p>
 <ul>
 <li>ComfyUI</li>
 <li>A1111</li>
 <li>kohya_ss</li>
+</ul>
+<p>Base Image:</p>
+<ul>
 <li>syncthing (but I prefer to use <code>bsync</code>)</li>
 </ul>
 <!-- JoplinContentEnd //-->

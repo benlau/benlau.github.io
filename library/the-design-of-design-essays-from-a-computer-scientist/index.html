@@ -71,6 +71,22 @@
 
 
 
+<script>
+document.addEventListener('keydown', function(event) {
+    
+    if (event.metaKey && event.key === 'o') {
+        
+        event.preventDefault();
+
+        
+        const url = "joplin:\/\/x-callback-url\/openNote?id=d43e75234c3e463eae76e77c784d8890";
+
+        
+        location.href = url;
+    }
+});
+</script>
+
 <div class="container mt-5" style="max-width: 1000px;">
         <div class="row justify-content-center g-4">
             
