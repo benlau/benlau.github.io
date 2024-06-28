@@ -25,13 +25,13 @@
     
     
     
-    <title>Garden_tags | Unlimited Build Works</title>
+    <title>ToonCrafter | Unlimited Build Works</title>
     <meta name="description" content="">
     <link rel="icon" href="https://benlau.github.io/img/favicon.ico" />
-    <meta property="og:title" content="Garden_tags"/>
+    <meta property="og:title" content="ToonCrafter"/>
     <meta property="og:description" content=""/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://benlau.github.io/garden_tags/"/>
+    <meta property="og:url" content="https://benlau.github.io/garden/tooncrafter/"/>
     
     <meta property="og:image" content="https://benlau.github.io/img/ogimage.png"/>
     <meta property="og:image:url" content="https://benlau.github.io/img/ogimage.png"/>
@@ -71,77 +71,92 @@
     </div>
 </nav><div id="content">
 
-<div class="container">
-    <div class="py-5 rounded-3">
+
+
+<script>
+document.addEventListener('keydown', function(event) {
+    
+    if (event.metaKey && event.key === 'o') {
+        
+        event.preventDefault();
+
+        
+        const url = "joplin:\/\/x-callback-url\/openNote?id=4b6f038244e5326b4db04e758dc7926d";
+
+        
+        location.href = url;
+    }
+});
+</script>
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4">Garden_tags</h1>
-            <p class="bio col-md-8 fs-4 serif"></p>
+            <h1 class="display-2 mb-4 text-center">ToonCrafter</h1>
+        </div>
+        
+        <div class="text-center pt-4">
+            
         </div>
     </div>
-</div>
-
-<div class="container">
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created May 31, 2024 - 
+                
+                Last updated: Jun 28, 2024
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
     
-    <p>
-        <h3><a class="title" href="/garden_tags/joplin/">joplin</a></h3>
-        
-
-<i data-feather="calendar"></i>
-<time datetime="0001-01-01">Jan 1, 0001</time>
-
-        <a class="summary" href="/garden_tags/joplin/">
-            <p></p>
-        </a>
-    </p>
+    <span class="status">Seeding 🌱</span>
     
-    <p>
-        <h3><a class="title" href="/garden_tags/gadget/">gadget</a></h3>
-        
 
-<i data-feather="calendar"></i>
-<time datetime="0001-01-01">Jan 1, 0001</time>
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                    
+                    <a href="/garden_tags/stable-diffusion">
+                        <span class="badge tag-badge">stable-diffusion</span>
+                    </a>
+                    
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <a class="summary" href="/garden_tags/gadget/">
-            <p></p>
-        </a>
-    </p>
-    
-    <p>
-        <h3><a class="title" href="/garden_tags/digital-nomad/">digital-nomad</a></h3>
-        
-
-<i data-feather="calendar"></i>
-<time datetime="0001-01-01">Jan 1, 0001</time>
-
-        <a class="summary" href="/garden_tags/digital-nomad/">
-            <p></p>
-        </a>
-    </p>
-    
-    <p>
-        <h3><a class="title" href="/garden_tags/stable-diffusion/">stable-diffusion</a></h3>
-        
-
-<i data-feather="calendar"></i>
-<time datetime="0001-01-01">Jan 1, 0001</time>
-
-        <a class="summary" href="/garden_tags/stable-diffusion/">
-            <p></p>
-        </a>
-    </p>
-    
-    <p>
-        <h3><a class="title" href="/garden_tags/second-brain/">second-brain</a></h3>
-        
-
-<i data-feather="calendar"></i>
-<time datetime="0001-01-01">Jan 1, 0001</time>
-
-        <a class="summary" href="/garden_tags/second-brain/">
-            <p></p>
-        </a>
-    </p>
-    
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <!-- JoplinContentBegin //-->
+<p>ToonCrafter interpolate between two cartoon images, generating a video sequence. ToonCrafter can generate videos of up to 16 frames with a resolution of 512x320</p>
+<p>by CUHK &amp; CityU &amp; Tencent AI Lab</p>
+<h1 id="project-site">Project Site</h1>
+<p><a href="https://github.com/ToonCrafter/ToonCrafter">https://github.com/ToonCrafter/ToonCrafter</a></p>
+<h1 id="comfyui">ComfyUI:</h1>
+<p><a href="https://github.com/AIGODLIKE/ComfyUI-ToonCrafter">https://github.com/AIGODLIKE/ComfyUI-ToonCrafter</a></p>
+<h2 id="model">Model</h2>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>%%bash
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mkdir -p ComfyUI/custom_nodes/ComfyUI-ToonCrafter/checkpoints/tooncrafter_512_interp_v1
+</span></span><span style="display:flex;"><span><span style="color:#111">cd</span> ComfyUI/custom_nodes/ComfyUI-ToonCrafter/checkpoints/tooncrafter_512_interp_v1
+</span></span><span style="display:flex;"><span>wget -nv https://huggingface.co/Kijai/DynamiCrafter_pruned/resolve/main/tooncrafter_512_interp-fp16.safetensors
+</span></span></code></pre></div><h1 id="todo">TODO</h1>
+<ul>
+<li><input disabled="" type="checkbox"> runbook @ junkcode</li>
+</ul>
+<!-- JoplinContentEnd //-->
+        </div>
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
 </div>
 
 
