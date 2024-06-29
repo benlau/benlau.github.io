@@ -9,6 +9,15 @@
     <copyright>Ben Lau ©</copyright>
     <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://benlau.github.io/garden/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Design Failures</title>
+      <link>https://benlau.github.io/garden/design-failures/</link>
+      <pubDate>Fri, 28 Jun 2024 16:59:31 +0000</pubDate>
+      
+      <guid>https://benlau.github.io/garden/design-failures/</guid>
+      <description>分享一些設計失敗的例子</description>
+    </item>
+    
+    <item>
       <title>quarto</title>
       <link>https://benlau.github.io/garden/quarto/</link>
       <pubDate>Wed, 26 Jun 2024 17:22:55 +0000</pubDate>

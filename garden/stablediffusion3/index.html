@@ -62,7 +62,10 @@
             <li class='nav-item '>
                     <a class="nav-link" href="/about/"> About</a>
                 </li>
-             
+            
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-search" id="search-button" href="https://www.google.com/search?q=site%3A%2F%2Fbenlau.github.io" target="_blank"></a>
+            </li>
             <li class="nav-item px-2 pt-1">
                 <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
             </li>
@@ -106,7 +109,7 @@ document.addEventListener('keydown', function(event) {
                 
                     Created Jun 19, 2024 - 
                 
-                Last updated: Jun 23, 2024
+                Last updated: Jun 28, 2024
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -131,8 +134,15 @@ document.addEventListener('keydown', function(event) {
             <!-- JoplinContentBegin //-->
 <h1 id="status">Status</h1>
 <ul>
-<li><a href="https://civitai.com/articles/5840">Update on SD3 on Civitai - Remain banned - 2024-06-23</a></li>
-<li><a href="https://www.youtube.com/watch?v=_m7TFwV0Ypw&amp;t=23s">SD3開源是希望還是絕望?內附ComfyUI使用方法 - 2024-06-23</a></li>
+<li>
+<p><a href="https://civitai.com/articles/5840">Update on SD3 on Civitai - Remain banned - 2024-06-23</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=_m7TFwV0Ypw&amp;t=23s">SD3開源是希望還是絕望?內附ComfyUI使用方法 - 2024-06-23</a></p>
+</li>
+<li>
+<p><a href="https://www.reddit.com/r/comfyui/comments/1dqidz2/sd3_now_supports_controlnet_on_comfy_ui/">SD3 now supports ControlNet on Comfy UI! : r/comfyui</a></p>
+</li>
 </ul>
 <h1 id="basic">Basic</h1>
 <ul>
@@ -161,8 +171,7 @@ document.addEventListener('keydown', function(event) {
 <h1 id="status-1">Status</h1>
 <h2 id="ready-to-use">Ready-to-use</h2>
 <ul>
-<li>ControlNet Canny</li>
-<li>ControlNet Pose</li>
+<li>ControlNet Canny,Pose,Tile</li>
 </ul>
 <!-- JoplinContentEnd //-->
         </div>
@@ -199,5 +208,16 @@ document.addEventListener('keydown', function(event) {
 <script src="/js/dark.js"></script>
 <script src="/js/isotope.js"></script>
 <script src="/js/mermaid.min.js"></script>
-<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script></body>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+<script>
+var $grid = $('.blogposts').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+
+$grid.imagesLoaded( function() {
+  $grid.masonry();
+});
+</script></body>
 </html>

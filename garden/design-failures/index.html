@@ -25,16 +25,18 @@
     
     
     
-    <title>MemoInjo | Unlimited Build Works</title>
-    <meta name="description" content="Stick memo on any website and sync via Joplin">
+    <title>Design Failures | Unlimited Build Works</title>
+    <meta name="description" content="分享一些設計失敗的例子">
     <link rel="icon" href="https://benlau.github.io/img/favicon.ico" />
-    <meta property="og:title" content="MemoInjo"/>
-    <meta property="og:description" content="Stick memo on any website and sync via Joplin"/>
+    <meta property="og:title" content="Design Failures"/>
+    <meta property="og:description" content="分享一些設計失敗的例子"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://benlau.github.io/projects/memoinjo/"/>
+    <meta property="og:url" content="https://benlau.github.io/garden/design-failures/"/>
     
-    
-    <meta property="og:image" content="https://benlau.github.io/projects/memoinjo/featured.png"/>
+    <meta property="og:image" content="https://benlau.github.io/img/ogimage.png"/>
+    <meta property="og:image:url" content="https://benlau.github.io/img/ogimage.png"/>
+    <meta property="og:image:width" content="199"/>
+    <meta property="og:image:height" content="150"/>
     
 
 </head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -82,7 +84,7 @@ document.addEventListener('keydown', function(event) {
         event.preventDefault();
 
         
-        const url = "joplin:\/\/x-callback-url\/openNote?id=227814e28f1e4e5c8b31d00d9d40913f";
+        const url = "joplin:\/\/x-callback-url\/openNote?id=e9186200f2ad49548fedc8b5f7553c82";
 
         
         location.href = url;
@@ -93,10 +95,10 @@ document.addEventListener('keydown', function(event) {
 <div class="container" style="max-width: 800px;">
     <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4 text-center">MemoInjo</h1>
+            <h1 class="display-2 mb-4 text-center">Design Failures</h1>
         </div>
         
-        <p class="text-center fs-4 fst-italic serif">Stick memo on any website and sync via Joplin</p>
+        <p class="text-center fs-4 fst-italic serif">分享一些設計失敗的例子</p>
         
         <div class="text-center pt-4">
             
@@ -107,9 +109,9 @@ document.addEventListener('keydown', function(event) {
             <p class="card-date m-0">
                 
                 
-                    Created Oct 13, 2022 - 
+                    Created Jun 28, 2024 - 
                 
-                Last updated: Feb 15, 2024
+                Last updated: Jun 28, 2024
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -124,12 +126,6 @@ document.addEventListener('keydown', function(event) {
                     
                 
                 
-                    
-                    <span class="badge tag-badge">chrome</span>
-                    
-                    <span class="badge tag-badge">joplin</span>
-                    
-                
                 </div>
             </div>
         </div>
@@ -137,39 +133,43 @@ document.addEventListener('keydown', function(event) {
 
     <div class="container-fluid py-2">
         <div class="serif main-content">
-            <h1 id="background">Background</h1>
-<p>WhyMakeMemoinjo | 7ca.b | m7jya</p>
-<h1 id="memoinjo">MemoInjo</h1>
-<p><img src="/res/5cf0f9d4bb24461d8a5de7d10fd09118/959962880364a3f407ca866d5b7afdab.png" alt="959962880364a3f407ca866d5b7afdab.png"></p>
-<p>MemoInjo is a browser extension that sticks a memo on any website and edit/sync via Joplin. Simply press the icon of MemoInjo at the extension toolbar (top-right corner) in Chrome. It will show a memo editor for the browsing website. You may create a summary or a task list associated with a website easily.</p>
-<p>MemoInjo is not a web clipper that could capture only once. You could reopen the same memo for the same URL. And thank to the sync feature of Joplin, you may access the memo across different computer.</p>
-<p><img src="https://user-images.githubusercontent.com/82716/164896560-97741f75-741e-4dd6-916c-6fd7fd2f8b51.png" alt="Screenshot"></p>
-<p><strong>Download</strong></p>
-<ul>
-<li><a href="https://chrome.google.com/webstore/detail/memoinjo/fbcdcliemdonkopdkpejdfmajlbaibac">Chrome Extension</a></li>
-<li><a href="https://addons.mozilla.org/en-US/firefox/addon/memoinjo">Firefox Add-on</a></li>
-</ul>
-<p><strong>Setup</strong></p>
+            <!-- JoplinContentBegin //-->
+<h1 id="joplin-garden-workerhahahugoshortcode-s0-hbhb"><a href="https://benlau.github.io/projects/joplin-export-tool/">Joplin Garden Worker</a></h1>
+<p>這是個失敗的項目，沒有用戶並非主因，開源計劃的開始並不要考慮這點，加上本來就是受眾少的類型，失敗在於 &mdash; 我本人也覺得難用。</p>
+<p>這項目的功用是把Joplin的筆記匯出成一個Hugo的網站（本站），理論上也能夠生成其他類型的文件，例如Github的wiki。</p>
+<p>設計困難：</p>
 <ol>
-<li>Install the extension</li>
-<li>Open Joplin</li>
-<li>Go to <strong>Web Clipper Options</strong> and follow the instruction.</li>
-<li>In the toolbar of the browser, press the button of MemoInjo</li>
-<li>It will ask you to grant permission in Joplin.</li>
-<li>Switch back to Joplin and grant the permission.</li>
+<li>匯出的檔案名字並不能直接用筆記標題，因為筆記標題會改變</li>
+<li>Hugo要用到的參數比Joplin能提供的多，例如summary、catalog這類</li>
 </ol>
-<p>Then it is ready to use.</p>
-
+<p>解決：</p>
+<ul>
+<li>建立一個metadata.yaml來記錄每筆Joplin筆記的匯出檔案名稱，以及各種額外的參數</li>
+<li>部份參數由Joplin筆記中提取，部份人手修改，反而客制不同頁面變得困難</li>
+</ul>
+<pre tabindex="0"><code>  - filename: Papeaso Video Capture Card.md
+    folder: garden
+    id: b46bbd6270ac9af7c9439e3bf0d32178
+    title: Papeaso Video Capture Card
+</code></pre><p>使用流程</p>
+<ul>
+<li>Joplin -&gt; metadata.yaml -&gt; Hugo Source -&gt; HTML Site</li>
+</ul>
+<p>指令</p>
+<pre tabindex="0"><code># Edit note in Joplin , set slug and summary
+jgw update # update metadata.yaml
+# Edit metadata.yaml change parameters 
+jgw export # export to hugo
+hugo # build html
+cp * SOMEWHERE/benlau.github.io # copy html to github
+cd SOMEWHERE/benlau.github.io
+git add .
+git commit -m &#34;Log&#34;
+git push
+</code></pre><p>這過程有夠麻煩的，其中有半年沒有更新，我就把整個流程都忘得一乾二淨。</p>
+<!-- JoplinContentEnd //-->
         </div>
         <div class="text-center pt-4">
-            
-            <hr class="dropdown-divider">            
-            
-            <a href="/garden/technology-radar" role="button" class="btn btn-sm btn-link mx-2">
-                <i class="fas fs-5"></i>
-            Technology Radar
-            </a>
-            
             
         </div>
     </div>

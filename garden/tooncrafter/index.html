@@ -62,7 +62,10 @@
             <li class='nav-item '>
                     <a class="nav-link" href="/about/"> About</a>
                 </li>
-             
+            
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-search" id="search-button" href="https://www.google.com/search?q=site%3A%2F%2Fbenlau.github.io" target="_blank"></a>
+            </li>
             <li class="nav-item px-2 pt-1">
                 <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
             </li>
@@ -142,10 +145,14 @@ document.addEventListener('keydown', function(event) {
 <h1 id="comfyui">ComfyUI:</h1>
 <p><a href="https://github.com/AIGODLIKE/ComfyUI-ToonCrafter">https://github.com/AIGODLIKE/ComfyUI-ToonCrafter</a></p>
 <h2 id="model">Model</h2>
+<p>@ai-dock + <a href="https://benlau.github.io/garden/runpod.io/">Runpod.io</a></p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>%%bash
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>mkdir -p ComfyUI/custom_nodes/ComfyUI-ToonCrafter/checkpoints/tooncrafter_512_interp_v1
-</span></span><span style="display:flex;"><span><span style="color:#111">cd</span> ComfyUI/custom_nodes/ComfyUI-ToonCrafter/checkpoints/tooncrafter_512_interp_v1
+</span></span><span style="display:flex;"><span>%%bash
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ToonCrafter</span>
+</span></span><span style="display:flex;"><span>mkdir -p /workspace/ComfyUI/custom_nodes/ComfyUI-ToonCrafter/ToonCrafter/checkpoints/tooncrafter_512_interp_v1
+</span></span><span style="display:flex;"><span><span style="color:#111">cd</span> /workspace/ComfyUI/custom_nodes/ComfyUI-ToonCrafter/ToonCrafter/checkpoints/tooncrafter_512_interp_v1
 </span></span><span style="display:flex;"><span>wget -nv https://huggingface.co/Kijai/DynamiCrafter_pruned/resolve/main/tooncrafter_512_interp-fp16.safetensors
 </span></span></code></pre></div><h1 id="todo">TODO</h1>
 <ul>
@@ -186,5 +193,16 @@ document.addEventListener('keydown', function(event) {
 <script src="/js/dark.js"></script>
 <script src="/js/isotope.js"></script>
 <script src="/js/mermaid.min.js"></script>
-<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script></body>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+<script>
+var $grid = $('.blogposts').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+
+$grid.imagesLoaded( function() {
+  $grid.masonry();
+});
+</script></body>
 </html>

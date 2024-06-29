@@ -62,7 +62,10 @@
             <li class='nav-item '>
                     <a class="nav-link" href="/about/"> About</a>
                 </li>
-             
+            
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-search" id="search-button" href="https://www.google.com/search?q=site%3A%2F%2Fbenlau.github.io" target="_blank"></a>
+            </li>
             <li class="nav-item px-2 pt-1">
                 <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
             </li>
@@ -106,7 +109,7 @@ document.addEventListener('keydown', function(event) {
                 
                     Created Jun 25, 2024 - 
                 
-                Last updated: Jun 25, 2024
+                Last updated: Jun 28, 2024
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -129,7 +132,6 @@ document.addEventListener('keydown', function(event) {
     <div class="container-fluid py-2">
         <div class="serif main-content">
             <!-- JoplinContentBegin //-->
-<p>Gitbook V1</p>
 <p>如果你在尋找可以用Markdown寫HTML文件的程式，很多時候都會找到GitBook。</p>
 <p>本來Gitbook的功能正如描述一樣，但後來營運團隊搞了一個V2出來，與V1可說是完全不同的東西，V1是一個離線的程式，V2卻是一個雲端服務，V1已不再維護，並要使用非常老舊的Node版本才能動起來。</p>
 <p>所以請不要再使用 GitBook V1了，你應該用其他Static Site Generator來代替，例如Hugo + Geek Doc Theme。</p>
@@ -168,5 +170,16 @@ document.addEventListener('keydown', function(event) {
 <script src="/js/dark.js"></script>
 <script src="/js/isotope.js"></script>
 <script src="/js/mermaid.min.js"></script>
-<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script></body>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+<script>
+var $grid = $('.blogposts').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+
+$grid.imagesLoaded( function() {
+  $grid.masonry();
+});
+</script></body>
 </html>

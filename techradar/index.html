@@ -62,7 +62,10 @@
             <li class='nav-item '>
                     <a class="nav-link" href="/about/"> About</a>
                 </li>
-             
+            
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-search" id="search-button" href="https://www.google.com/search?q=site%3A%2F%2Fbenlau.github.io" target="_blank"></a>
+            </li>
             <li class="nav-item px-2 pt-1">
                 <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
             </li>
@@ -118,16 +121,6 @@
     
     
         
-            
-        
-    
-        
-            
-        
-    
-        
-    
-        
     
         
     
@@ -136,11 +129,23 @@
         
     
         
+    
+        
             
         
     
         
     
+        
+    
+        
+    
+        
+            
+        
+    
+        
+            
         
     
         
@@ -316,7 +321,9 @@
         
     
         
-            
+    
+        
+    
         
     
         
@@ -328,7 +335,7 @@
         
     
         
-    
+            
         
     
         
@@ -504,6 +511,8 @@
         
     
         
+    
+        
             
         
     
@@ -598,23 +607,25 @@
         
     
         
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
             
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
         
     
         
@@ -685,7 +696,7 @@
                 </div>
                 <div class="col-4 ">
                     <p class="card-right">
-                        <span class="card-date">Jun 23, 2024 </span>
+                        <span class="card-date">Jun 28, 2024 </span>
                         <br/>
     
     <span class="status">Seeding 🌱</span>
@@ -744,15 +755,17 @@
         
     
         
-    
-        
-    
-        
-    
-        
-    
-        
             
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
         
     
         
@@ -827,7 +840,7 @@
                 </div>
                 <div class="col-4 ">
                     <p class="card-right">
-                        <span class="card-date">Jun 25, 2024 </span>
+                        <span class="card-date">Jun 28, 2024 </span>
                         <br/>
     
     <span class="status">Seeding 🌱</span>
@@ -895,5 +908,16 @@
 <script src="/js/dark.js"></script>
 <script src="/js/isotope.js"></script>
 <script src="/js/mermaid.min.js"></script>
-<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script></body>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+<script>
+var $grid = $('.blogposts').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+
+$grid.imagesLoaded( function() {
+  $grid.masonry();
+});
+</script></body>
 </html>

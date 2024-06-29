@@ -62,7 +62,10 @@
             <li class='nav-item '>
                     <a class="nav-link" href="/about/"> About</a>
                 </li>
-             
+            
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-search" id="search-button" href="https://www.google.com/search?q=site%3A%2F%2Fbenlau.github.io" target="_blank"></a>
+            </li>
             <li class="nav-item px-2 pt-1">
                 <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
             </li>
@@ -104,7 +107,7 @@ document.addEventListener('keydown', function(event) {
             <p class="card-date m-0">
                 
                 
-                    Created Oct 6, 2022 - 
+                    Created Oct 4, 2022 - 
                 
                 Last updated: Nov 11, 2022
             </p>
@@ -132,7 +135,8 @@ document.addEventListener('keydown', function(event) {
 
     <div class="container-fluid py-2">
         <div class="serif main-content">
-            <p>Joplin Garden Worker (JGW) is a tool to export notes from Joplin to build (but not limited to) a digital garden website.</p>
+            <!-- JoplinContentBegin //-->
+<p>Joplin Garden Worker (JGW) is a tool to export notes from Joplin to build (but not limited to) a digital garden website.</p>
 <p>Unlike the traditional personal blog that publishes a set of articles in a reversed chronological order, the digital garden is a lot like a wiki with evolving ideas connected by links.</p>
 <p>The JGW exports the notes into a folder. It will modify the content like the link according to the engine chosen. If Hugo is chosen, you may build a static site using its command line tool based on the content from the export folder.</p>
 <p>Project Site: <a href="https://github.com/benlau/joplin-garden-worker">benlau/joplin-garden-worker: Export notes from Joplin to build a digital garden website</a></p>
@@ -152,15 +156,20 @@ document.addEventListener('keydown', function(event) {
 </ul>
 </li>
 </ul>
-
+<!-- JoplinContentEnd //-->
         </div>
         <div class="text-center pt-4">
             
             <hr class="dropdown-divider">            
             
-            <a href="/about/" role="button" class="btn btn-sm btn-link mx-2">
+            <a href="/about/_index" role="button" class="btn btn-sm btn-link mx-2">
                 <i class="fas fs-5"></i>
             About Ben Lau
+            </a>
+            
+            <a href="/garden/design-failures" role="button" class="btn btn-sm btn-link mx-2">
+                <i class="fas fs-5"></i>
+            Design Failures
             </a>
             
             
@@ -195,5 +204,16 @@ document.addEventListener('keydown', function(event) {
 <script src="/js/dark.js"></script>
 <script src="/js/isotope.js"></script>
 <script src="/js/mermaid.min.js"></script>
-<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script></body>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+<script>
+var $grid = $('.blogposts').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+
+$grid.imagesLoaded( function() {
+  $grid.masonry();
+});
+</script></body>
 </html>

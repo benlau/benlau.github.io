@@ -62,7 +62,10 @@
             <li class='nav-item '>
                     <a class="nav-link" href="/about/"> About</a>
                 </li>
-             
+            
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-search" id="search-button" href="https://www.google.com/search?q=site%3A%2F%2Fbenlau.github.io" target="_blank"></a>
+            </li>
             <li class="nav-item px-2 pt-1">
                 <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
             </li>
@@ -125,6 +128,36 @@
         
         
 
+<div class='col '>
+    <div class="card top-highlight">
+        <div class="card-body">
+             
+            <h4 class="card-title">Design Failures</h4>
+            <p class="card-text pb-3">分享一些設計失敗的例子</p>
+            
+            <a href="https://benlau.github.io/garden/design-failures/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Jun 28, 2024</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
     
 
 <div class='col  js-iso-second-brain'>
@@ -168,7 +201,7 @@
                 <div class="col-6">
                     
                     
-                    <span style="font-size: small"> Jun 25, 2024</span>
+                    <span style="font-size: small"> Jun 28, 2024</span>
                 </div>
                 <div class="col-6" style="text-align: right">
                     
@@ -259,7 +292,7 @@
                 <div class="col-6">
                     
                     
-                    <span style="font-size: small"> Jun 23, 2024</span>
+                    <span style="font-size: small"> Jun 28, 2024</span>
                 </div>
                 <div class="col-6" style="text-align: right">
                     
@@ -1228,5 +1261,16 @@
 <script src="/js/dark.js"></script>
 <script src="/js/isotope.js"></script>
 <script src="/js/mermaid.min.js"></script>
-<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script></body>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+<script>
+var $grid = $('.blogposts').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+
+$grid.imagesLoaded( function() {
+  $grid.masonry();
+});
+</script></body>
 </html>
