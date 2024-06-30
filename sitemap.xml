@@ -2,26 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://benlau.github.io/library/only-the-paranoid-survive/</loc>
+    <lastmod>2024-06-30T09:19:05+00:00</lastmod>
+  </url><url>
+    <loc>https://benlau.github.io/</loc>
+    <lastmod>2024-06-30T09:19:05+00:00</lastmod>
+  </url><url>
     <loc>https://benlau.github.io/garden/design-failures/</loc>
     <lastmod>2024-06-28T17:06:13+00:00</lastmod>
   </url><url>
-    <loc>https://benlau.github.io/</loc>
-    <lastmod>2024-06-28T17:06:13+00:00</lastmod>
-  </url><url>
     <loc>https://benlau.github.io/garden_tags/</loc>
-    <lastmod>2024-06-28T10:45:19+00:00</lastmod>
+    <lastmod>2024-06-30T09:13:47+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/quarto/</loc>
-    <lastmod>2024-06-26T17:40:22+00:00</lastmod>
+    <lastmod>2024-06-30T08:51:29+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/second-brain/</loc>
-    <lastmod>2024-06-27T04:55:50+00:00</lastmod>
+    <lastmod>2024-06-30T09:13:47+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/techradar_tags/</loc>
-    <lastmod>2024-06-28T16:21:37+00:00</lastmod>
+    <lastmod>2024-06-30T09:13:47+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/techradar_tags/trial/</loc>
-    <lastmod>2024-06-26T17:40:33+00:00</lastmod>
+    <lastmod>2024-06-30T09:13:47+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/gitbook-v1/</loc>
     <lastmod>2024-06-28T02:17:49+00:00</lastmod>
@@ -30,16 +33,16 @@
     <lastmod>2024-06-28T02:17:49+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/projects/lora-char-model/</loc>
-    <lastmod>2024-06-26T16:12:38+00:00</lastmod>
+    <lastmod>2024-06-30T08:47:24+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/techradar_tags/assess/</loc>
-    <lastmod>2024-06-28T10:45:19+00:00</lastmod>
+    <lastmod>2024-06-30T08:50:28+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/runpod.io/</loc>
-    <lastmod>2024-06-26T02:24:00+00:00</lastmod>
+    <lastmod>2024-06-30T08:50:28+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/stable-diffusion/</loc>
-    <lastmod>2024-06-28T10:45:19+00:00</lastmod>
+    <lastmod>2024-06-30T08:50:28+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/notebooklm/</loc>
     <lastmod>2024-06-27T04:55:50+00:00</lastmod>
@@ -108,7 +111,7 @@
     <lastmod>2024-06-26T02:44:27+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/jupyter-for-devops/</loc>
-    <lastmod>2024-06-26T17:40:33+00:00</lastmod>
+    <lastmod>2024-06-28T18:22:11+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/ath-cc500bt/</loc>
     <lastmod>2024-06-18T06:22:43+00:00</lastmod>
@@ -198,7 +201,7 @@
     <lastmod>2024-04-25T17:31:40+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/vscode-second-brain/</loc>
-    <lastmod>2024-06-26T17:30:43+00:00</lastmod>
+    <lastmod>2024-06-30T09:13:47+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/how-to-take-smart-notes-one-simple-technique-to-boost-writing-learning-and-thinking/</loc>
     <lastmod>2023-11-12T06:27:37+00:00</lastmod>
