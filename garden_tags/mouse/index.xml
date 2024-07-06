@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mouse on Unlimited Build Works</title>
+    <link>https://benlau.github.io/garden_tags/mouse/</link>
+    <description>Recent content in mouse on Unlimited Build Works</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Ben Lau ©</copyright>
+    <lastBuildDate>Mon, 17 Jun 2024 02:15:20 +0000</lastBuildDate><atom:link href="https://benlau.github.io/garden_tags/mouse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logitech Pebble M350</title>
+      <link>https://benlau.github.io/garden/logitech-pebble-m350/</link>
+      <pubDate>Mon, 17 Jun 2024 02:15:20 +0000</pubDate>
+      
+      <guid>https://benlau.github.io/garden/logitech-pebble-m350/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logitech MX Master 3 Mouse</title>
+      <link>https://benlau.github.io/garden/logitech-mx-master-3-mouse/</link>
+      <pubDate>Thu, 06 Oct 2022 19:11:39 +0000</pubDate>
+      
+      <guid>https://benlau.github.io/garden/logitech-mx-master-3-mouse/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
