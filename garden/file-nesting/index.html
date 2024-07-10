@@ -25,13 +25,13 @@
     
     
     
-    <title>Optimistic Updates | Unlimited Build Works</title>
-    <meta name="description" content="">
+    <title>File Nesting | Unlimited Build Works</title>
+    <meta name="description" content="VSCode Feature to nest files in a folder">
     <link rel="icon" href="https://benlau.github.io/img/favicon.ico" />
-    <meta property="og:title" content="Optimistic Updates"/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="File Nesting"/>
+    <meta property="og:description" content="VSCode Feature to nest files in a folder"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://benlau.github.io/garden/optimistic-updates/"/>
+    <meta property="og:url" content="https://benlau.github.io/garden/file-nesting/"/>
     
     <meta property="og:image" content="https://benlau.github.io/img/ogimage.png"/>
     <meta property="og:image:url" content="https://benlau.github.io/img/ogimage.png"/>
@@ -84,7 +84,7 @@ document.addEventListener('keydown', function(event) {
         event.preventDefault();
 
         
-        const url = "joplin:\/\/x-callback-url\/openNote?id=5a785c71f9f440e8b2b192fa0f6387a7";
+        const url = "joplin:\/\/x-callback-url\/openNote?id=17130d7ad9bd0ac54d928a1fc90de53d";
 
         
         location.href = url;
@@ -95,8 +95,10 @@ document.addEventListener('keydown', function(event) {
 <div class="container" style="max-width: 800px;">
     <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4 text-center">Optimistic Updates</h1>
+            <h1 class="display-2 mb-4 text-center">File Nesting</h1>
         </div>
+        
+        <p class="text-center fs-4 fst-italic serif">VSCode Feature to nest files in a folder</p>
         
         <div class="text-center pt-4">
             
@@ -107,7 +109,7 @@ document.addEventListener('keydown', function(event) {
             <p class="card-date m-0">
                 
                 
-                    Created Jul 6, 2024 - 
+                    Created Apr 16, 2024 - 
                 
                 Last updated: Jul 10, 2024
             </p>
@@ -123,6 +125,12 @@ document.addEventListener('keydown', function(event) {
                 <div class="col-sm-8" style="text-align: right;">
                     
                 
+                    
+                    <a href="/garden_tags/second-brain">
+                        <span class="badge tag-badge">second-brain</span>
+                    </a>
+                    
+                
                 
                 </div>
             </div>
@@ -132,16 +140,37 @@ document.addEventListener('keydown', function(event) {
     <div class="container-fluid py-2">
         <div class="serif main-content">
             <!-- JoplinContentBegin //-->
-<p>Optimistic updates</p>
-<blockquote>
-<p><strong>Gemini:</strong> Optimistic updates make web apps feel faster by updating the UI instantly after user actions, like liking a post. It assumes success but can fix any mismatches later. This improves user experience but requires careful planning to avoid data inconsistencies.</p>
-</blockquote>
-<p>However, optimistic updates don&rsquo;t mean you should fire and forget it.</p>
-<p>Let&rsquo;s say removing a resource inside a list with a third-party service may not be able to finish instantly. If the user closes the page and launches it again, they may find that it is not removed, which can be frustrating.</p>
-<p><img src="/res/ee6917dff17949e59e86a26ce8dd0f88/fb4e47d77f6dc0707bfbbb7c3acca799.png" alt="fb4e47d77f6dc0707bfbbb7c3acca799.png"></p>
+<p>A VSCode function that nests files based on their names</p>
+<p>Example:</p>
+<p><img src="/res/3da5c588fce744b788c5036410eaa3ef/994f2be4f7e228a57306280fa63d8975.png" alt="994f2be4f7e228a57306280fa63d8975.png"></p>
+<pre tabindex="0"><code>/xxx.md
+    /xxx.jpg
+    /xxx.dvc
+    /xxx.json
+</code></pre><p>Setting:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;explorer.fileNesting.patterns&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;*.md&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;$(capture).png, $(capture).jpg, $(capture).csv, $(capture).json&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><p>For more information, see <a href="https://code.visualstudio.com/updates/v1_67#_explorer-file-nesting">Document</a>.</p>
+<h1 id="usage">Usage</h1>
+<ul>
+<li>Record generated parameters for an image made by Stable Diffusion.</li>
+<li>Record metadata/comments about a file and link to other markdown files.</li>
+<li>It is quite useful to assist <a href="https://benlau.github.io/garden/vscode-second-brain/">VSCode Second Brain</a>.</li>
+</ul>
+<h1 id="related-options">Related Options</h1>
+<pre tabindex="0"><code>explorer.fileNesting.enabled - Controls whether file nesting is enabled at large. It can be set either globally or for a specific workspace.
+explorer.fileNesting.expand - Controls whether nested files are expanded by default.
+explorer.fileNesting.patterns - Controls how files are nested. The default configuration provides nesting intelligence for TypeScript and JavaScript projects, but you&#39;re encouraged to modify this to fit your own project&#39;s structure. Some examples:
+</code></pre><h1 id="weakness">Weakness</h1>
+<ul>
+<li>You can&rsquo;t move all the files by dragging the root item.</li>
+</ul>
 <h1 id="see-also">See Also</h1>
 <ul>
-<li><a href="https://benlau.github.io/garden/design-principles/">Design Principles</a></li>
+<li><a href="https://benlau.github.io/garden/vscode-second-brain/">VSCode Second Brain</a></li>
 </ul>
 <!-- JoplinContentEnd //-->
         </div>
@@ -149,9 +178,9 @@ document.addEventListener('keydown', function(event) {
             
             <hr class="dropdown-divider">            
             
-            <a href="/garden/design-principles" role="button" class="btn btn-sm btn-link mx-2">
+            <a href="/garden/vscode-second-brain" role="button" class="btn btn-sm btn-link mx-2">
                 <i class="fas fs-5"></i>
-            Design Principles/Practices
+            VSCode Second Brain
             </a>
             
             

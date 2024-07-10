@@ -81,7 +81,7 @@
     </item>
     
     <item>
-      <title>Design Principles/Practices</title>
+      <title>Design Principles / Practices</title>
       <link>https://benlau.github.io/garden/design-principles/</link>
       <pubDate>Wed, 19 Jun 2024 02:04:06 +0000</pubDate>
       
@@ -168,6 +168,15 @@
       
       <guid>https://benlau.github.io/garden/noteful/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>File Nesting</title>
+      <link>https://benlau.github.io/garden/file-nesting/</link>
+      <pubDate>Tue, 16 Apr 2024 18:27:57 +0000</pubDate>
+      
+      <guid>https://benlau.github.io/garden/file-nesting/</guid>
+      <description>VSCode Feature to nest files in a folder</description>
     </item>
     
     <item>

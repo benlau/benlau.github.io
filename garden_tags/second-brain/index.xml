@@ -45,6 +45,15 @@
     </item>
     
     <item>
+      <title>File Nesting</title>
+      <link>https://benlau.github.io/garden/file-nesting/</link>
+      <pubDate>Tue, 16 Apr 2024 18:27:57 +0000</pubDate>
+      
+      <guid>https://benlau.github.io/garden/file-nesting/</guid>
+      <description>VSCode Feature to nest files in a folder</description>
+    </item>
+    
+    <item>
       <title>VSCode Second Brain</title>
       <link>https://benlau.github.io/garden/vscode-second-brain/</link>
       <pubDate>Tue, 24 May 2022 18:07:09 +0000</pubDate>
