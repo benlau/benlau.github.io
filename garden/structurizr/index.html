@@ -25,13 +25,13 @@
     
     
     
-    <title>hold | Unlimited Build Works</title>
+    <title>Structurizr | Unlimited Build Works</title>
     <meta name="description" content="">
     <link rel="icon" href="https://benlau.github.io/img/favicon.ico" />
-    <meta property="og:title" content="hold"/>
+    <meta property="og:title" content="Structurizr"/>
     <meta property="og:description" content=""/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://benlau.github.io/techradar_tags/hold/"/>
+    <meta property="og:url" content="https://benlau.github.io/garden/structurizr/"/>
     
     <meta property="og:image" content="https://benlau.github.io/img/ogimage.png"/>
     <meta property="og:image:url" content="https://benlau.github.io/img/ogimage.png"/>
@@ -74,65 +74,104 @@
     </div>
 </nav><div id="content">
 
-<div class="container">
-    <div class="py-5 rounded-3">
+
+
+<script>
+document.addEventListener('keydown', function(event) {
+    
+    if (event.metaKey && event.key === 'o') {
+        
+        event.preventDefault();
+
+        
+        const url = "joplin:\/\/x-callback-url\/openNote?id=8c6920ba9b0d00a698887c8abd7a1a62";
+
+        
+        location.href = url;
+    }
+});
+</script>
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4">hold</h1>
-            <p class="bio col-md-8 fs-4 serif"></p>
+            <h1 class="display-2 mb-4 text-center">Structurizr</h1>
+        </div>
+        
+        <div class="text-center pt-4">
+            
         </div>
     </div>
-</div>
-
-<div class="container">
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created Jul 24, 2022 - 
+                
+                Last updated: Jul 20, 2024
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    <div class="d-flex flex-row gap-2">
+                        
     
-    <p>
-        <h3><a class="title" href="/garden/c4-mermaid/">C4 Diagram @ Mermaid</a></h3>
-        
-
-<i data-feather="calendar"></i>
-<time datetime="2024-07-14">Jul 14, 2024</time>
-
-        <a class="summary" href="/garden/c4-mermaid/">
-            <p></p>
-        </a>
-    </p>
+    <span class="status">Seeding 🌱</span>
     
-    <p>
-        <h3><a class="title" href="/garden/stablediffusion3/">Stable Diffusion 3</a></h3>
-        
 
-<i data-feather="calendar"></i>
-<time datetime="2024-06-19">Jun 19, 2024</time>
+                        
 
-        <a class="summary" href="/garden/stablediffusion3/">
-            <p></p>
-        </a>
-    </p>
+
+
+<span class="radar-status"><a href="/techradar">Hold 📡</a></span>
+
+
     
-    <p>
-        <h3><a class="title" href="/garden/web-component/">Web Component</a></h3>
-        
+                    </div>
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
 
-<i data-feather="calendar"></i>
-<time datetime="2023-04-12">Apr 12, 2023</time>
-
-        <a class="summary" href="/garden/web-component/">
-            <p>Web Component</p>
-        </a>
-    </p>
-    
-    <p>
-        <h3><a class="title" href="/garden/structurizr/">Structurizr</a></h3>
-        
-
-<i data-feather="calendar"></i>
-<time datetime="2022-07-24">Jul 24, 2022</time>
-
-        <a class="summary" href="/garden/structurizr/">
-            <p></p>
-        </a>
-    </p>
-    
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <!-- JoplinContentBegin //-->
+<ul>
+<li>
+<p>Structurizr是一種Diagram as Code的生成工具，專為C4圖表而設的</p>
+<ul>
+<li>參考： <a href="https://benlau.github.io/garden/c4-mermaid/">Mermaid</a> 及Plantuml也可以生成C4</li>
+</ul>
+</li>
+<li>
+<p>雖然是Diagrams as Code的工具，但你可以透過圖像化介面修改已生成的C4圖表，這點相當之有用</p>
+</li>
+<li>
+<p>Structurizr把元件分成Model及View，一個檔案內可以有好幾個不同的View同時存在，並使用同一組Model，Model與Model之間的關係會自動寫入view中，也可以設定為不顯示，理論上可以令你快速地建立不同類型的C4圖表</p>
+</li>
+<li>
+<p>但現實沒有那麼美好，你未必想自動把所有關係都做進一張圖表中，找出不顯示的關係是挺花功夫的</p>
+</li>
+<li>
+<p>而且設計過於嚴緊，缺乏彈性，不同圖表可以使用的圖形並不一樣，也不一定能連線，看似合理的設計，實際使用時只會令人感到諸多不便</p>
+<ul>
+<li>例如說我想在Deployment Diagram中加入Person代表許可以用這部份的功能，但並不容許，最終我只能當成System並且把圖示修改成Person來個瞞天過海</li>
+</ul>
+</li>
+</ul>
+<p>結果：我放棄使用，還是用Plantuml吧</p>
+<!-- JoplinContentEnd //-->
+        </div>
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
 </div>
 
 
