@@ -109,7 +109,7 @@ document.addEventListener('keydown', function(event) {
                 
                     Created Jul 6, 2024 - 
                 
-                Last updated: Jul 10, 2024
+                Last updated: Jul 23, 2024
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -144,9 +144,10 @@ document.addEventListener('keydown', function(event) {
 <blockquote>
 <p><strong>Gemini:</strong> Optimistic updates make web apps feel faster by updating the UI instantly after user actions, like liking a post. It assumes success but can fix any mismatches later. This improves user experience but requires careful planning to avoid data inconsistencies.</p>
 </blockquote>
-<p>However, optimistic updates don&rsquo;t mean you should fire and forget it.</p>
+<p>However, optimistic updates don&rsquo;t mean you should <strong>fire and forget</strong> it.</p>
 <p>Let&rsquo;s say removing a resource inside a list with a third-party service may not be able to finish instantly. If the user closes the page and launches it again, they may find that it is not removed, which can be frustrating.</p>
 <p><img src="/res/ee6917dff17949e59e86a26ce8dd0f88/fb4e47d77f6dc0707bfbbb7c3acca799.png" alt="fb4e47d77f6dc0707bfbbb7c3acca799.png"></p>
+<p>Therefore, a soft delete mechanism may be needed on the frontend side to filter out soft-deleted items (or show a removal icon).</p>
 <h1 id="see-also">See Also</h1>
 <ul>
 <li><a href="https://benlau.github.io/garden/design-principles/">Design Principles</a></li>

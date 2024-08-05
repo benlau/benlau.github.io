@@ -2,32 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://benlau.github.io/</loc>
+    <lastmod>2024-08-05T16:14:11+00:00</lastmod>
+  </url><url>
+    <loc>https://benlau.github.io/publications/how-i-lost-1m-users/</loc>
+    <lastmod>2024-08-05T16:14:11+00:00</lastmod>
+  </url><url>
+    <loc>https://benlau.github.io/publications/</loc>
+    <lastmod>2024-08-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://benlau.github.io/garden/c4-mermaid/</loc>
     <lastmod>2024-07-15T07:14:45+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/techradar_tags/hold/</loc>
-    <lastmod>2024-07-20T03:15:13+00:00</lastmod>
+    <lastmod>2024-07-20T03:38:22+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/techradar_tags/</loc>
-    <lastmod>2024-07-20T03:15:13+00:00</lastmod>
-  </url><url>
-    <loc>https://benlau.github.io/</loc>
-    <lastmod>2024-07-20T03:15:13+00:00</lastmod>
+    <lastmod>2024-07-20T17:59:48+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/optimistic-updates/</loc>
-    <lastmod>2024-07-10T10:28:35+00:00</lastmod>
+    <lastmod>2024-07-23T07:22:16+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/ransomware-hunting-team/</loc>
     <lastmod>2024-07-03T04:34:01+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/techradar_tags/assess/</loc>
-    <lastmod>2024-07-14T09:49:15+00:00</lastmod>
+    <lastmod>2024-07-20T17:59:48+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/</loc>
-    <lastmod>2024-07-14T09:49:15+00:00</lastmod>
+    <lastmod>2024-07-20T17:59:48+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/stable-diffusion/</loc>
-    <lastmod>2024-07-14T09:49:15+00:00</lastmod>
+    <lastmod>2024-07-20T17:59:48+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/autostudio/</loc>
     <lastmod>2024-07-02T05:40:19+00:00</lastmod>
@@ -84,16 +90,16 @@
     <lastmod>2024-06-24T15:36:34+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/digital-nomad-equipments/</loc>
-    <lastmod>2024-07-11T17:14:38+00:00</lastmod>
+    <lastmod>2024-07-20T03:33:44+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/digital-nomad/</loc>
-    <lastmod>2024-07-11T17:14:38+00:00</lastmod>
+    <lastmod>2024-07-20T03:33:44+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/junkcode/</loc>
     <lastmod>2024-07-02T01:40:48+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/tooncrafter/</loc>
-    <lastmod>2024-07-14T09:49:15+00:00</lastmod>
+    <lastmod>2024-07-20T17:59:48+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/reactflow/</loc>
     <lastmod>2024-07-03T04:39:09+00:00</lastmod>
@@ -219,7 +225,7 @@
     <lastmod>2024-06-15T05:14:59+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/structurizr/</loc>
-    <lastmod>2024-07-20T03:15:13+00:00</lastmod>
+    <lastmod>2024-07-20T03:38:22+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/critiqued-inside-the-minds-of-23-leaders-in-design/</loc>
     <lastmod>2022-10-18T06:51:10+00:00</lastmod>
@@ -236,7 +242,7 @@
     <loc>https://benlau.github.io/garden/technology-radar/</loc>
     <lastmod>2024-04-25T17:29:55+00:00</lastmod>
   </url><url>
-    <loc>https://benlau.github.io/library/%E7%9B%B2%E7%9B%AE%E6%B8%85%E9%9B%B6%E5%BE%92%E5%8B%9E%E7%84%A1%E5%8A%9F/</loc>
+    <loc>https://benlau.github.io/publications/%E7%9B%B2%E7%9B%AE%E6%B8%85%E9%9B%B6%E5%BE%92%E5%8B%9E%E7%84%A1%E5%8A%9F/</loc>
     <lastmod>2023-06-25T03:55:44+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/my-favorite-joplin-plugins-and-applications/</loc>
