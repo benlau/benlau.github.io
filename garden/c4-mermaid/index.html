@@ -66,13 +66,11 @@
             <li class="nav-item px-2 pt-1">
                 <a class="btn fas fa-search" id="search-button" href="https://www.google.com/search?q=site%3A%2F%2Fbenlau.github.io" target="_blank"></a>
             </li>
-            <li class="nav-item px-2 pt-1">
-                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
-            </li>
             </ul>
         </div>
     </div>
-</nav><div id="content">
+</nav>
+<div id="content">
 
 
 
@@ -209,6 +207,7 @@ document.addEventListener('keydown', function(event) {
 <script src="/js/dark.js"></script>
 <script src="/js/isotope.js"></script>
 <script src="/js/mermaid.min.js"></script>
+<script src="/js/tech-radar.js"></script>
 <script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
 <script>
 var $grid = $('.blogposts').masonry({
@@ -217,8 +216,11 @@ var $grid = $('.blogposts').masonry({
   columnWidth: '.grid-sizer'
 });
 
-$grid.imagesLoaded( function() {
-  $grid.masonry();
+document.addEventListener('DOMContentLoaded', function() {
+  
+  $grid.imagesLoaded( function() {
+    $grid.masonry();
+  });
 });
 </script></body>
 </html>
