@@ -2,35 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://benlau.github.io/techradar_tags/hold/</loc>
-    <lastmod>2024-12-01T04:59:49+00:00</lastmod>
-  </url><url>
-    <loc>https://benlau.github.io/garden/image-capture-api/</loc>
-    <lastmod>2024-12-01T04:59:49+00:00</lastmod>
-  </url><url>
-    <loc>https://benlau.github.io/techradar_tags/</loc>
-    <lastmod>2024-12-01T04:59:49+00:00</lastmod>
+    <loc>https://benlau.github.io/projects/runbookmd/</loc>
+    <lastmod>2024-12-15T02:00:45+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/</loc>
-    <lastmod>2024-12-01T04:59:49+00:00</lastmod>
+    <lastmod>2024-12-15T02:00:45+00:00</lastmod>
+  </url><url>
+    <loc>https://benlau.github.io/techradar_tags/hold/</loc>
+    <lastmod>2024-12-06T15:52:37+00:00</lastmod>
+  </url><url>
+    <loc>https://benlau.github.io/garden/image-capture-api/</loc>
+    <lastmod>2024-12-06T15:52:37+00:00</lastmod>
+  </url><url>
+    <loc>https://benlau.github.io/techradar_tags/</loc>
+    <lastmod>2024-12-15T02:00:29+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/digital-nomad/</loc>
-    <lastmod>2024-12-01T04:49:56+00:00</lastmod>
+    <lastmod>2024-12-01T07:16:14+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/gadget/</loc>
-    <lastmod>2024-12-01T04:49:56+00:00</lastmod>
+    <lastmod>2024-12-01T07:16:14+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/</loc>
-    <lastmod>2024-12-01T04:49:56+00:00</lastmod>
+    <lastmod>2024-12-15T02:00:29+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/keyboard/</loc>
-    <lastmod>2024-12-01T04:49:56+00:00</lastmod>
+    <lastmod>2024-12-01T07:16:14+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/logitech-keys-to-go-2/</loc>
-    <lastmod>2024-12-01T04:49:56+00:00</lastmod>
+    <lastmod>2024-12-01T07:16:14+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/techradar_tags/assess/</loc>
-    <lastmod>2024-09-19T12:51:28+00:00</lastmod>
+    <lastmod>2024-12-01T05:39:30+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/stable-diffusion/</loc>
     <lastmod>2024-09-18T09:49:43+00:00</lastmod>
@@ -45,7 +48,7 @@
     <lastmod>2024-10-14T14:20:06+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/personal-kb-flow-2023/</loc>
-    <lastmod>2024-08-25T03:34:56+00:00</lastmod>
+    <lastmod>2024-12-01T05:16:58+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/publications/how-i-lost-1m-users/</loc>
     <lastmod>2024-08-05T16:14:11+00:00</lastmod>
@@ -75,10 +78,10 @@
     <lastmod>2024-06-30T08:51:29+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/second-brain/</loc>
-    <lastmod>2024-09-19T12:51:28+00:00</lastmod>
+    <lastmod>2024-12-15T02:00:29+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/techradar_tags/trial/</loc>
-    <lastmod>2024-11-23T16:43:48+00:00</lastmod>
+    <lastmod>2024-12-15T02:00:29+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/gitbook-v1/</loc>
     <lastmod>2024-06-28T02:17:49+00:00</lastmod>
@@ -93,7 +96,7 @@
     <lastmod>2024-07-02T07:13:01+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/notebooklm/</loc>
-    <lastmod>2024-09-19T12:51:28+00:00</lastmod>
+    <lastmod>2024-12-01T05:39:30+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/stable-diffusion-jack-ellie/</loc>
     <lastmod>2024-07-09T06:24:54+00:00</lastmod>
@@ -252,7 +255,7 @@
     <lastmod>2024-04-25T17:31:40+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/vscode-second-brain/</loc>
-    <lastmod>2024-07-12T07:00:05+00:00</lastmod>
+    <lastmod>2024-12-15T02:00:29+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/how-to-take-smart-notes-one-simple-technique-to-boost-writing-learning-and-thinking/</loc>
     <lastmod>2023-11-12T06:27:37+00:00</lastmod>

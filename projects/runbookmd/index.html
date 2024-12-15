@@ -25,18 +25,16 @@
     
     
     
-    <title>ImageCapture API | Unlimited Build Works</title>
-    <meta name="description" content="實驗中的拍攝API">
+    <title>Runbook.md | Unlimited Build Works</title>
+    <meta name="description" content="">
     <link rel="icon" href="https://benlau.github.io/img/favicon.ico" />
-    <meta property="og:title" content="ImageCapture API"/>
-    <meta property="og:description" content="實驗中的拍攝API"/>
+    <meta property="og:title" content="Runbook.md"/>
+    <meta property="og:description" content=""/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://benlau.github.io/garden/image-capture-api/"/>
+    <meta property="og:url" content="https://benlau.github.io/projects/runbookmd/"/>
     
-    <meta property="og:image" content="https://benlau.github.io/img/ogimage.png"/>
-    <meta property="og:image:url" content="https://benlau.github.io/img/ogimage.png"/>
-    <meta property="og:image:width" content="199"/>
-    <meta property="og:image:height" content="150"/>
+    
+    <meta property="og:image" content="https://benlau.github.io/projects/runbookmd/featured.png"/>
     
 
 </head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -82,7 +80,7 @@ document.addEventListener('keydown', function(event) {
         event.preventDefault();
 
         
-        const url = "joplin:\/\/x-callback-url\/openNote?id=3a5d33eeb4614e72af5d7855669f2a47";
+        const url = "joplin:\/\/x-callback-url\/openNote?id=cf633eb06a6c404c87a417077967fb53";
 
         
         location.href = url;
@@ -93,10 +91,8 @@ document.addEventListener('keydown', function(event) {
 <div class="container" style="max-width: 800px;">
     <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4 text-center">ImageCapture API</h1>
+            <h1 class="display-2 mb-4 text-center">Runbook.md</h1>
         </div>
-        
-        <p class="text-center fs-4 fst-italic serif">實驗中的拍攝API</p>
         
         <div class="text-center pt-4">
             
@@ -107,24 +103,18 @@ document.addEventListener('keydown', function(event) {
             <p class="card-date m-0">
                 
                 
-                    Created Dec 1, 2024 - 
+                    Created Dec 14, 2024 - 
                 
-                Last updated: Dec 6, 2024
+                Last updated: Dec 15, 2024
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
                 <div class="col-sm-4">
                     <div class="d-flex flex-row gap-2">
                         
-    
-    <span class="status">Seeding 🌱</span>
-    
-
                         
 
 
-
-<span class="radar-status"><a href="/techradar">Hold 📡</a></span>
 
 
     
@@ -142,17 +132,37 @@ document.addEventListener('keydown', function(event) {
     <div class="container-fluid py-2">
         <div class="serif main-content">
             <!-- JoplinContentBegin //-->
-<p>在瀏覽器上使用鏡頭拍攝有一個大問題，就是預灠影像等同於拍攝影像，為了拍攝高質素影像就要把預灠的解像度調到最高，少不免會讓手機發燙</p>
-<p>ImageCapture API是可以解決這問題的救星：</p>
-<blockquote>
-<p>Image Capture API 是一種瀏覽器 API，用於從媒體流中獲取照片和調整相機參數。它允許在網頁中捕捉相機的高品質靜態圖像，並控制相機設置，例如焦距、曝光等，是媒體應用開發的關鍵工具。</p>
-</blockquote>
-<p>我最近花了一些時間研究 ImageCapture這個API，老實說，它的支援情況並不好。</p>
-<p>而且我還遇到了一個非常奇怪的問題，使用 ARM 架構的 MacBook，在使用這個 API 拍照時，會生成 1552 x 1552 的奇怪解析度，受影響的型號包括M1-M3，以及抱括最新版本內的數個OS版本。</p>
-<p>但並非所有ARM MacBook都受影響，有些 MacBook 能正常拍出預期的 1280 x 720 解析度，暫時未研究到規律。</p>
+<p>I’ve always wished that scripts written in Markdown could be executed directly, making various maintenance tasks easier and more efficient. By simply following a manual and clicking a few buttons, tasks could be completed seamlessly, and any missing details could be linked together for better accessibility.</p>
+<p>Initially, I planned to implement this idea in Atom. However, shortly after I started preparing, Github announced Atom would no longer be maintained. Orz</p>
+<p>As a result, the idea was shelved for many years—until the end of 2024, when I finally brought it to life.</p>
+<p>The outcome is <strong>Runbook.md</strong>, a VSCode extension.</p>
+<h3 id="features">Features:</h3>
+<ul>
+<li>If the code block type is <code>bash run</code>, a &ldquo;Run&rdquo; button will be added above it. Clicking the button or pressing <code>Shift+Enter</code> will execute the script in the terminal.</li>
+<li><strong>@param to define parameters</strong> – Before execution, VSCode prompts the user for input based on the defined parameters. For example: <code># @param VALUE [&quot;A&quot;,&quot;B&quot;]</code>.</li>
+<li><code>bash run --ask-confirm</code> – Ensures that dangerous commands require confirmation before execution.</li>
+</ul>
+<p><img src="/res/266938752a2a42ef8ab75e3740e08a7a/8d5d111c5a115267349be9ea76ffc967.png" alt="8d5d111c5a115267349be9ea76ffc967.png"></p>
+<h1 id="links">Links</h1>
+<ul>
+<li><a href="https://github.com/benlau/runbookmd">Runbook.md@Github</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ubw.runbookmd">Runbook.md@ Visual Studio Marketplace</a></li>
+</ul>
+<h1 id="see-also">See Also</h1>
+<ul>
+<li><a href="https://benlau.github.io/garden/vscode-second-brain/">VSCode Second Brain</a></li>
+</ul>
 <!-- JoplinContentEnd //-->
         </div>
         <div class="text-center pt-4">
+            
+            <hr class="dropdown-divider">            
+            
+            <a href="/garden/vscode-second-brain" role="button" class="btn btn-sm btn-link mx-2">
+                <i class="fas fs-5"></i>
+            VSCode Second Brain
+            </a>
+            
             
         </div>
     </div>
