@@ -24,16 +24,18 @@
     
     
     
-    <title>Runbook.md | Unlimited Build Works</title>
+    <title>Hunyuan Video | Unlimited Build Works</title>
     <meta name="description" content="">
     <link rel="icon" href="https://benlau.github.io/img/favicon.ico" />
-    <meta property="og:title" content="Runbook.md"/>
+    <meta property="og:title" content="Hunyuan Video"/>
     <meta property="og:description" content=""/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://benlau.github.io/projects/runbookmd/"/>
+    <meta property="og:url" content="https://benlau.github.io/garden/hunyuan-video/"/>
     
-    
-    <meta property="og:image" content="https://benlau.github.io/projects/runbookmd/featured.png"/>
+    <meta property="og:image" content="https://benlau.github.io/img/ogimage.png"/>
+    <meta property="og:image:url" content="https://benlau.github.io/img/ogimage.png"/>
+    <meta property="og:image:width" content="199"/>
+    <meta property="og:image:height" content="150"/>
     
 
 </head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -79,7 +81,7 @@ document.addEventListener('keydown', function(event) {
         event.preventDefault();
 
         
-        const url = "joplin:\/\/x-callback-url\/openNote?id=cf633eb06a6c404c87a417077967fb53";
+        const url = "joplin:\/\/x-callback-url\/openNote?id=f1c2e68f6a5049d48ea3bcac0d2f92d4";
 
         
         location.href = url;
@@ -90,7 +92,7 @@ document.addEventListener('keydown', function(event) {
 <div class="container" style="max-width: 800px;">
     <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4 text-center">Runbook.md</h1>
+            <h1 class="display-2 mb-4 text-center">Hunyuan Video</h1>
         </div>
         
         <div class="text-center pt-4">
@@ -102,16 +104,22 @@ document.addEventListener('keydown', function(event) {
             <p class="card-date m-0">
                 
                 
-                    Created Dec 14, 2024 - 
+                    Created Dec 22, 2024 - 
                 
-                Last updated: Dec 15, 2024
+                Last updated: Dec 25, 2024
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
                 <div class="col-sm-4">
                     <div class="d-flex flex-row gap-2">
                         
+    
+    <span class="status">Seeding 🌱</span>
+    
+
                         
+
+<span class="radar-status"><a href="/techradar">Assess 📡</a></span>
 
 
 
@@ -120,6 +128,12 @@ document.addEventListener('keydown', function(event) {
                     </div>
                 </div>
                 <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                    
+                    <a href="/garden_tags/stable-diffusion">
+                        <span class="badge tag-badge">stable-diffusion</span>
+                    </a>
                     
                 
                 
@@ -131,37 +145,34 @@ document.addEventListener('keydown', function(event) {
     <div class="container-fluid py-2">
         <div class="serif main-content">
             <!-- JoplinContentBegin //-->
-<p>I’ve always wished that scripts written in Markdown could be executed directly, making various maintenance tasks easier and more efficient. By simply following a manual and clicking a few buttons, tasks could be completed seamlessly, and any extra information could be linked together for better accessibility.</p>
-<p>Initially, I planned to implement this idea in Atom. However, shortly after I started preparing, Github announced that Atom would no longer be maintained. Orz</p>
-<p>As a result, the idea was shelved for many years—until the end of 2024, when I finally brought it to life.</p>
-<p>The outcome is <strong>Runbook.md</strong>, a VSCode extension.</p>
-<h3 id="features">Features:</h3>
 <ul>
-<li>If the code block type is <code>bash run</code>, a &ldquo;Run&rdquo; button will be added above it. Clicking the button or pressing <code>Shift+Enter</code> will execute the script in the terminal.</li>
-<li><strong>@param to define parameters</strong> – Before execution, VSCode prompts the user for input based on the defined parameters. For example: <code># @param VALUE [&quot;A&quot;,&quot;B&quot;]</code>.</li>
-<li><code>bash run --ask-confirm</code> – Ensures that dangerous commands require confirmation before execution.</li>
+<li>ComfyUI has native support for <a href="https://huggingface.co/tencent/HunyuanVideo">HunyuanVideo</a>.</li>
+<li>You can find an example at <a href="https://comfyanonymous.github.io/ComfyUI_examples/hunyuan_video/">Hunyuan Video Model | ComfyUI_examples</a>.</li>
 </ul>
-<p><img src="/res/266938752a2a42ef8ab75e3740e08a7a/8d5d111c5a115267349be9ea76ffc967.png" alt="8d5d111c5a115267349be9ea76ffc967.png"></p>
-<h1 id="links">Links</h1>
-<ul>
-<li><a href="https://github.com/benlau/runbookmd">Runbook.md@Github</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=ubw.runbookmd">Runbook.md@ Visual Studio Marketplace</a></li>
-</ul>
-<h1 id="see-also">See Also</h1>
-<ul>
-<li><a href="https://benlau.github.io/garden/vscode-second-brain/">VSCode Second Brain</a></li>
-</ul>
-<!-- JoplinContentEnd //-->
+<p>Script to download all the required models:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> <span style="color:#111">mmget</span> <span style="color:#f92672">import</span> <span style="color:#111">mmget</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> <span style="color:#111">dotenv</span> <span style="color:#f92672">import</span> <span style="color:#111">load_dotenv</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">load_dotenv</span><span style="color:#111">(</span><span style="color:#d88200">&#34;.env&#34;</span><span style="color:#111">)</span> <span style="color:#75715e"># Load your huggingface access token if available</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Replace `/workspace` by your ComfyUI installation path</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">mmget</span><span style="color:#111">(</span>    
+</span></span><span style="display:flex;"><span><span style="color:#111">)</span><span style="color:#f92672">.</span><span style="color:#111">dl</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#d88200">&#34;https://huggingface.co/Comfy-Org/HunyuanVideo_repackaged/blob/main/split_files/diffusion_models/hunyuan_video_t2v_720p_bf16.safetensors&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#d88200">&#34;/workspace/ComfyUI/models/diffusion_models&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">)</span><span style="color:#f92672">.</span><span style="color:#111">dl</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#d88200">&#34;https://huggingface.co/Comfy-Org/HunyuanVideo_repackaged/blob/main/split_files/text_encoders/clip_l.safetensors&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#d88200">&#34;/workspace/ComfyUI/models/text_encoders&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">)</span><span style="color:#f92672">.</span><span style="color:#111">dl</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#d88200">&#34;https://huggingface.co/Comfy-Org/HunyuanVideo_repackaged/blob/main/split_files/text_encoders/llava_llama3_fp8_scaled.safetensors&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#d88200">&#34;/workspace/ComfyUI/models/text_encoders&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">)</span><span style="color:#f92672">.</span><span style="color:#111">dl</span><span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#d88200">&#34;https://huggingface.co/Comfy-Org/HunyuanVideo_repackaged/blob/main/split_files/vae/hunyuan_video_vae_bf16.safetensors&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#d88200">&#34;/workspace/ComfyUI/models/vae&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">)</span><span style="color:#f92672">.</span><span style="color:#111">run</span><span style="color:#111">()</span>
+</span></span></code></pre></div><!-- JoplinContentEnd //-->
         </div>
         <div class="text-center pt-4">
-            
-            <hr class="dropdown-divider">            
-            
-            <a href="/garden/vscode-second-brain/" role="button" class="btn btn-sm btn-link mx-2">
-                <i class="fas fs-5"></i>
-            VSCode Second Brain
-            </a>
-            
             
         </div>
     </div>
