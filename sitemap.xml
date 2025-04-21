@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://benlau.github.io/projects/kanmug/</loc>
-    <lastmod>2025-02-07T02:53:12+00:00</lastmod>
+    <loc>https://benlau.github.io/projects/mermaid-lens/</loc>
+    <lastmod>2025-04-21T05:03:30+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/</loc>
-    <lastmod>2025-03-06T15:25:59+00:00</lastmod>
+    <lastmod>2025-04-21T05:03:30+00:00</lastmod>
+  </url><url>
+    <loc>https://benlau.github.io/projects/kanmug/</loc>
+    <lastmod>2025-02-07T02:53:12+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/techradar_tags/assess/</loc>
     <lastmod>2025-02-04T02:45:46+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/</loc>
-    <lastmod>2025-03-06T15:23:05+00:00</lastmod>
+    <lastmod>2025-04-08T05:11:13+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/hunyuan-video/</loc>
     <lastmod>2025-02-02T02:33:41+00:00</lastmod>
@@ -24,10 +27,10 @@
     <lastmod>2025-02-10T18:30:26+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/alice-adventures-in-a-differentiable-wonderland/</loc>
-    <lastmod>2025-03-06T15:25:37+00:00</lastmod>
+    <lastmod>2025-03-06T15:38:13+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/projects/runbookmd/</loc>
-    <lastmod>2024-12-15T02:40:21+00:00</lastmod>
+    <lastmod>2025-04-09T03:15:22+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/techradar_tags/hold/</loc>
     <lastmod>2025-02-10T18:30:26+00:00</lastmod>
@@ -36,25 +39,25 @@
     <lastmod>2024-12-06T15:52:37+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/digital-nomad/</loc>
-    <lastmod>2025-03-06T15:23:05+00:00</lastmod>
+    <lastmod>2025-04-08T05:11:13+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/gadget/</loc>
-    <lastmod>2025-03-06T15:23:05+00:00</lastmod>
+    <lastmod>2025-04-08T05:11:13+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden_tags/keyboard/</loc>
-    <lastmod>2025-03-06T15:23:05+00:00</lastmod>
+    <lastmod>2025-04-08T05:11:13+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/logitech-keys-to-go-2/</loc>
-    <lastmod>2025-03-06T15:23:05+00:00</lastmod>
+    <lastmod>2025-04-08T05:11:13+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/living-documentation/</loc>
     <lastmod>2025-02-04T02:45:46+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/library/natural-language-processing-with-transformers/</loc>
-    <lastmod>2025-02-01T19:12:23+00:00</lastmod>
+    <lastmod>2025-03-08T06:16:03+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/ai-by-hand/</loc>
-    <lastmod>2025-03-06T15:25:59+00:00</lastmod>
+    <lastmod>2025-03-06T21:09:07+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/personal-kb-flow-2023/</loc>
     <lastmod>2025-02-18T05:47:57+00:00</lastmod>
@@ -99,7 +102,7 @@
     <lastmod>2024-06-28T02:17:49+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/projects/lora-char-model/</loc>
-    <lastmod>2024-07-02T01:40:14+00:00</lastmod>
+    <lastmod>2025-03-08T06:21:05+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/runpod.io/</loc>
     <lastmod>2024-07-02T07:13:01+00:00</lastmod>
@@ -154,6 +157,9 @@
   </url><url>
     <loc>https://benlau.github.io/garden/noteful/</loc>
     <lastmod>2024-11-24T03:54:21+00:00</lastmod>
+  </url><url>
+    <loc>https://benlau.github.io/publications/requirements-analysis-story/</loc>
+    <lastmod>2025-04-21T04:58:23+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/file-nesting/</loc>
     <lastmod>2024-07-10T11:21:39+00:00</lastmod>
@@ -276,7 +282,7 @@
     <lastmod>2023-06-25T03:55:44+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/my-favorite-joplin-plugins-and-applications/</loc>
-    <lastmod>2025-02-04T08:26:49+00:00</lastmod>
+    <lastmod>2025-03-06T15:41:03+00:00</lastmod>
   </url><url>
     <loc>https://benlau.github.io/garden/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>

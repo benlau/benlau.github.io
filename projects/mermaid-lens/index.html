@@ -24,18 +24,16 @@
     
     
     
-    <title>Publications | Unlimited Build Works</title>
-    <meta name="description" content="">
+    <title>Mermaid Lens | Unlimited Build Works</title>
+    <meta name="description" content="A zoomable and exportable Mermaid diagram viewer for VSCode">
     <link rel="icon" href="https://benlau.github.io/img/favicon.ico" />
-    <meta property="og:title" content="Publications"/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="Mermaid Lens"/>
+    <meta property="og:description" content="A zoomable and exportable Mermaid diagram viewer for VSCode"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://benlau.github.io/publications/"/>
+    <meta property="og:url" content="https://benlau.github.io/projects/mermaid-lens/"/>
     
-    <meta property="og:image" content="https://benlau.github.io/img/ogimage.png"/>
-    <meta property="og:image:url" content="https://benlau.github.io/img/ogimage.png"/>
-    <meta property="og:image:width" content="199"/>
-    <meta property="og:image:height" content="150"/>
+    
+    <meta property="og:image" content="https://benlau.github.io/projects/mermaid-lens/featured.png"/>
     
 
 </head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -72,98 +70,90 @@
 <div id="content">
 
 
-<div class="container">
-    <div class="py-5 rounded-3">
+
+<script>
+document.addEventListener('keydown', function(event) {
+    
+    if (event.metaKey && event.key === 'o') {
+        
+        event.preventDefault();
+
+        
+        const url = "joplin:\/\/x-callback-url\/openNote?id=2df221b39da34a2a9b125ccb238fe04b";
+
+        
+        location.href = url;
+    }
+});
+</script>
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4">Publications</h1>
-            <p class="bio col-md-8 fs-4 serif"></p>
+            <h1 class="display-2 mb-4 text-center">Mermaid Lens</h1>
+        </div>
+        
+        <p class="text-center fs-4 fst-italic serif">A zoomable and exportable Mermaid diagram viewer for VSCode</p>
+        
+        <div class="text-center pt-4">
+            
         </div>
     </div>
-</div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created Apr 21, 2025 - 
+                
+                Last updated: Apr 21, 2025
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    <div class="d-flex flex-row gap-2">
+                        
+    
+    <span class="status">Seeding 🌱</span>
+    
+
+                        
 
 
-<div class="container mb-5">
+
 
     
-    <div class="btn-toolbar mb-2 bio" role="toolbar" aria-label="Toolbar with button groups">
-        <i class="fas fa-filter"></i>
-        <div id="filters" class="button-group">
-            
-        </div>
-    </div>
-</div>
-
-
-<div class="container">
-    <div class="row" data-masonry='{"percentPosition": true }' id="blogposts">
-        
-        
-
-
-<div class='col col-sm-6 col-lg-6 col-xl-4 mb-3 '>
-    <div class="card top-highlight">
-        <a href="https://benlau.github.io/publications/how-i-lost-1m-users/" class="stretched-link"></a>
-        <div class="row g-0">
-            
-            
-                <div class="card-body">
-                    
-                    <h4 class="card-title pb-3">關於我失去了100萬用戶這件事</h4>
-                    
+                    </div>
                 </div>
-            
-        </div>
-    </div>
-</div>
-
-
-
-        
-        
-
-
-<div class='col col-sm-6 col-lg-6 col-xl-4 mb-3 '>
-    <div class="card top-highlight">
-        <a href="https://benlau.github.io/publications/requirements-analysis-story/" class="stretched-link"></a>
-        <div class="row g-0">
-            
-            
-                <div class="card-body">
+                <div class="col-sm-8" style="text-align: right;">
                     
-                    <h4 class="card-title pb-3">一則需求分析的故事</h4>
-                    
+                
+                
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <!-- JoplinContentBegin //-->
+<p>That is my second published VSCode extension, it is Mermaid Lens,  a VSCode extension that supports zooming and exporting Mermaid diagrams.</p>
+<p>(The first one is  <a href="https://benlau.github.io/projects/runbookmd/">Runbook.md</a>)</p>
+<p>I often use Cursor to write documents and get AI to generate class diagrams, which saves me a lot of time and effort. But VSCode’s built-in Mermaid viewer doesn’t support zooming, which makes it hard to read, so I decided to create this tool. Once it’s done, I export the diagrams and share them with colleagues.</p>
+<p>Since the features are simple, I originally hoped to let AI handle more of the development work in a way of vibe coding. But unexpectedly, the whole process wasn’t as smooth as I anticipated.</p>
+<p>The project boilerplate was generated quickly, and the Theme Engine that AI wrote for me saved a lot of time digging through documentation. However, the build script often had issues—like incorrect directory settings or redundant steps.</p>
+<p>When it came to implementing zoom and auto refresh functionality, things got trickier. Describing those rules in writing wasn’t easy. If the feature descriptions weren’t clear, the AI didn’t understand them—sometimes even breaking other features out of the blue.</p>
+<p>Rather than waste time going back and forth in communication, I just took over and wrote the code myself. But the generated code by AI is full of dirty hacks, so I had to clean up technical debt while coding&hellip;</p>
+<p>Software architecture still needs proper planning in the AI age.</p>
+<p>Moreover, after finishing a feature, I asked the AI to work on something else, and it silently rewrote the style of the previous code—but did it incorrectly. I accidentally committed it without noticing. I can imagine this kind of disaster will become a common issue in software development.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>The prototyping phase was fast, but things slowed down once the technical debt piled up.</p>
+<!-- JoplinContentEnd //-->
+        </div>
+        <div class="text-center pt-4">
             
         </div>
     </div>
-</div>
-
-
-
-        
-        
-
-
-<div class='col col-sm-6 col-lg-6 col-xl-4 mb-3 '>
-    <div class="card top-highlight">
-        <a href="https://benlau.github.io/publications/%E7%9B%B2%E7%9B%AE%E6%B8%85%E9%9B%B6%E5%BE%92%E5%8B%9E%E7%84%A1%E5%8A%9F/" class="stretched-link"></a>
-        <div class="row g-0">
-            
-            
-                <div class="card-body">
-                    
-                    <h4 class="card-title pb-3">盲目清零，徒勞無功</h4>
-                    
-                </div>
-            
-        </div>
-    </div>
-</div>
-
-
-
-        
-     </div>
 </div>
 
 

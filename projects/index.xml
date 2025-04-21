@@ -9,6 +9,15 @@
     <copyright>Ben Lau ©</copyright>
     <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://benlau.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Mermaid Lens</title>
+      <link>https://benlau.github.io/projects/mermaid-lens/</link>
+      <pubDate>Mon, 21 Apr 2025 04:59:41 +0000</pubDate>
+      
+      <guid>https://benlau.github.io/projects/mermaid-lens/</guid>
+      <description>A zoomable and exportable Mermaid diagram viewer for VSCode</description>
+    </item>
+    
+    <item>
       <title>KanMug</title>
       <link>https://benlau.github.io/projects/kanmug/</link>
       <pubDate>Sun, 02 Feb 2025 02:24:38 +0000</pubDate>
